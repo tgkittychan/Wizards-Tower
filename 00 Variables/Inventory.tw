@@ -1,0 +1,8 @@
+::Inventory
+<<set $panties = "plain white briefs">>
+
+<<set $wardrobe = []>>
+<<set $wardrobe.push($outfit)>>\
+
+<<set $pills = 0>>
+<<set $money = 0>>

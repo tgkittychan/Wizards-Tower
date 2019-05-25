@@ -1,0 +1,10 @@
+::RamsdaleLinks
+<<set $ramsdaleBusinessLinks = [
+    "[[Logak's Office|Logak Office]]"
+]>>
+
+<<set $ramsdaleOtherLinks = [
+    "[[Giant Crystal in the Square|RamsdaleCrystal]]"
+]>>
+
+<<set $ramsdaleHomeLinks = []>>

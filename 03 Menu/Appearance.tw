@@ -1,0 +1,29 @@
+::Menu Appearance [menu]
+<h2>Body</h2>\
+You're a young $player.race. <<print getRace($player.hair, $humanity, $nyapurr)>>
+
+<<print playerFace($player.face[$faceNum])>>
+
+<<print breastSize($player.breasts[$breastNum])>> 
+
+<<print muscles($player.muscle[$muscleNum])>>
+
+<<print bodyHair($player.bodyHair[$bodyHairNum])>>
+
+<<print belly($daysPregnant)>>
+
+<<print butt($player.butt[$buttNum])>>
+
+<<if $player.sex == "male">>\
+    <<print cockSize($player.penis[$penisSize])>>
+<<else>>\
+    <<print vagina($player.libido, $player.race)>>
+<</if>>\
+
+<<back [[Return|$return]]>>
+
+
+::Menu Outfit [menu]
+<<print outfit($player.outfit)>>
+
+<<back [[Return|$return]]>>

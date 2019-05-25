@@ -1,0 +1,117 @@
+::NyaButtGropeSubmit
+<<booty>>\
+<<set $nyapurrEvent = false>>\
+You're not sure why, but you find yourself leaning against the table, presenting your <<print $player.butt[$buttNum]>> butt. The man smiles and starts molesting your butt again. 
+
+At first he just gropes you through your skirt, but his hand soon finds its way underneath it, fondling your ass through your $panties. You moan a little, and <<if $player.sex == "male">>your $player.penis[$penisSize] grows rock hard in your $panties. You're momentarily worried he's going to find out you're a boy, but he simply molests your butt, not bothering to touch anything else.<<else>>you feel yourself heating up with arousal. You momentarily wonder if he's going to fuck your pussy, but he simply molests your butt, not bothering to touch anything else.<</if>>
+
+"Thanks for being a good sport," the customer says. "A girl like you deserves a small tip."
+
+[[Leave|$job.name + $shift][$money += 20]]
+
+
+::NyaButtGropeImAGuy
+You feel his hand stop, then leave your backside. Just when you're about to sigh in relief, his hand is on your ass again.
+
+"You know what, this is kind of hot," he says. "Can I see your cock? I'll give you $<<print $tip>>."
+
+[[I'm kind of at work...|NyaButtGropeImAGuyAtWork]]
+[[Ugh, fine|NyaButtGropeShowCock]]
+[[No, and I'm leaving|$job.name + $shift]]
+
+::NyaButtGropeImAGuyAtWork
+"No-one will mind," the guy says. "In case you haven't noticed, stuff like this is expected here."
+
+Unfortunately you had noticed. That doesn't mean you want anything to do with it. He did say something about giving you a tip, though...
+
+[[Show him your cock|NyaButtGropeShowCock]]
+[[Nope. I'm out of here|$job.name + $shift]]
+
+
+::NyaButtGropeShowCock
+You lift up your skirt, giving him a clear view of your $player.penis[$penisSize] nestled inside $panties. You feel your face heat up a little at his gaze.
+
+<<if $penisSize == 4>>\
+    "Wow," he says. "I must admit, I'm surprised it's so big. To think a little girl like you is packing something like that..."
+
+    You smile proudly at his words. You always were proud of your $player.penis[$penisSize]. Although you never thought you'd be showing it to another man while disguised as a woman.
+
+    The man coughs, as if forcibly clearing his throat. "Anyway, I'm a man of my word. Here your tip."
+
+    [[Walk away|$job.name + $shift][$money += $tip]]
+<<elseif $penisSize == 3>>\
+    "Not bad," he says. "I'll admit it's a bit bigger than I expected, but damn, you really do look like a girl. I need to eat here more often. Here's your tip."
+
+    [[Walk away|$job.name + $shift][$money += $tip]]
+<<elseif $penisSize == 2>>\
+    "Nice," he says. "That's about what I'd expect. Small and cute - it suits a so-called "man" like you."
+    
+    After a few moments, the man speaks again. "Hey, how would you like to see a real cock? I'll increase your tip. How does $<<print $tip + 20>> sound?"
+
+    [[Well, I do need the money...|NyaButtGropeSuck][$money += $tip + 20]]
+    [[No, this has gone far enough|$job.name + $shift][$money += $tip]]
+<<elseif $penisSize == 1>>\
+    "I must admit I'm impressed," he says. "Not with the size. Well, I guess it's the size. It's just so... small. It suits you, though - a real man wouldn't dress like that."
+    
+    You glare at him, but he doesn't seem to notice.
+
+    The man smiles. "How would you like to see a real cock? I'll give a cutie like you $<<print $tip + 20>>."
+
+    [[Well, I do need the money...|NyaButtGropeSuck][$money += $tip + 20]]
+    [[No, this has gone far enough|$job.name + $shift][$money += $tip]]
+<<elseif $penisSize == 0>>\
+    The man squints, trying to find your $player.penis[$penisSize] hiding beneath your $panties. "Is this a joke? You don't have a dick."
+
+    Your face flashes hot. It seems your cock is so small that it's easier for him to believe you're lying. How humiliating!
+
+    Annoyed, you yank your $panties to the side, revealing your $player.penis[$penisSize].
+
+    The man's eyes go wide. "Wow, you do have one. Though that's the most pathetic thing I've ever seen." As if noticing your hurt expression, he quickly waves his hands in apology. "Sorry, sorry. I mean pathetic in a good way. You're just so feminine and... uh... this is going to sound weird, but it's kind of turning me on. That cock is just so utterly useless. You belong in a skirt."
+
+    You tap your foot, trying to refrain from punching the guy. He's a customer and you //did// show this guy your dick. You kind of brought this on yourself.
+
+    "How about I show you a real cock?" The man smiles smugly, looking you up and down. "C'mon, I'll give you $<<print $tip + 20>>."
+
+    [[Well, I do need the money...|NyaButtGropeSuck][$money += $tip + 20]]
+    [[No, this has gone far enough|$job.name + $shift][$money += $tip]]
+<</if>>\
+
+
+::NyaButtGropeSuck
+<<libido>>\
+<<penis>>\
+At his instruction, you crawl under the table. It's kind of dark down here, but you quickly become grateful for the long table cloth as you think about what you're about to do. Even now this guy is pitching a tent in his pants.
+
+The guy grabs hold of his pants, pulling them down enough to expose a large cock. "What do you think, sissy boy? This is what a real cock looks like." It twitches a few times, growing even more erect.
+
+As far as cocks go, it's about as big as yours was before coming to The Tower. Yet if you compare it to what you have now, your $player.penis[$penisSize] is utterly pathetic. The realization fills you with shame and although it's probably just your imagination, it feels like your cock shrivels ever so slightly.
+
+"What are you waiting for?" he asks. "Come touch it."
+
+Gulping down some air, you crawl towards his crotch. It has a thick, masculine scent, which you realize you no longer have. When you reach out and touch it, which makes him groan in appreciation, you realize just how small and feminine your hands have become.
+
+You yelp in surprise when he grabs you by the shoulders, pulling you face first into his crotch. His cock is pressing up against the side of your face now. The scent is so strong that it's making you dizzy. You're pretty sure cock didn't used to have this affect on you, but for some reason it does now.
+
+The man grunts. "Unf... good girl." Wait. When did you start licking it? His hand rests on the back of your head, as if to keep you in place. "Yeah, that's really good."
+
+You're not sure what's come over you, but you just can't stop licking his cock. Something about the scent is driving you wild and you find yourself running your tongue up and down his shaft, savoring the taste. You know this is wrong, that it's the magic of The Tower messing with your head, but you just can't stop.
+
+The man repositions a bit, pressing his cock against your lips, and you open your mouth. Your eyes roll back as his cock slides into your mouth. It's odd, but you don't gag at all as it moves in and out, hitting your throat each time.
+
+As the man literally fucks your face, you feel a small spasm in your lower body. At first you don't know what's going on, but then a bigger spasm comes and you know you're cumming. You moan with your mouth stuffed full of cock, gripping his legs for support as your $player.penis[$penisSize] betrays you, soaking your $panties with cum. 
+
+The man grunts, gripping the back of your head as he shoves his cock deep into your mouth and holds it there. The man grunts again and then you feel something hot flowing into your throat. You're held there, unable to move as the man cums straight down your throat. 
+
+When he's finally done, the man lets out a sigh of relief and pulls his cock out of your mouth. 
+
+[[Get out from under table|NyaButtGropeSuck2]]
+
+
+::NyaButtGropeSuck2
+You start to blush furiously as you think about what just happened. You just sucked another man's dick, but that's not even the worst part. The wet, sticky feeling of your $panties beneath your skirt confirms that you came //just// from sucking his cock. Talk about unmanly.
+
+You've never been attracted to men before, but you completely lost control of yourself. Just what the hell is happening to you?
+
+"That was nice." The man has a big, stupid smile on his face as he looks at you. "I'll definitely be back."
+
+[[Grabbing your tip, you make your escape|$job.name + $shift]]

@@ -1,0 +1,10 @@
+::Menu Stats [menu]
+<b>Strength:</b> $player.strength
+<b>Defense:</b> $player.defense
+<b>Vitality:</b> $player.vitality
+<b>Dexterity:</b> $player.dexterity
+<b>Survival:</b> $player.survival
+
+<b>Weapon Damage:</b> $player.weapon.damage
+
+<<back [[Return|$return]]>>

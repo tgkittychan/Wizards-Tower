@@ -1,0 +1,82 @@
+::Meet Felicity
+Walking into the office, you find a short girl in a lab coat hunched over something on a desk. She has blonde hair, with cat ears of the same color are protruding out the top of her head. Whatever she's doing, she seems so focused on it that she doesn't notice you.
+
+"Are you Felicity?" you ask, taking a step closer.
+
+The girl jumps, screaming, "Nyaaaaaaa!" A second later, there's a crash and a puff of blue smoke. Spinning on her heels, you find yourself face to face with angry green eyes. "You! You are interrupting important worknya!"
+
+"Sorry," you say, taking another step towards her. "I'm new in town and..."
+
+Felicity's ears perk up. "Nyew?! I've heard about you!" Trotting over to you, she takes you by the arm and start's leading you toward a doctor's bed. "Come, human. Let's get you tested. I want to see how the magic of The Tower is affecting your body."
+
+"Wait," you say, planting your feet. The girl tries to drag you, but she's too weak to make you budge. "I mean, maybe you can test me later, but this is important."
+
+Felicity raises an eyebrow. "More important than seeing how powerful magics are affecting your bodynya?"
+
+"Err, yes," you say. "I think. I'm dying."
+
+Felicity's ears go flat. "Dyingnya...?"
+
+[[Yes, I'm dying|Tell Felicity about stone heart]]
+
+
+::Tell Felicity about stone heart
+"Well, we can't have that," Felicity says. "What ails you humanya?"
+
+"It's called Stone Heart." Felicity tilts her head up at you. "Err, it's called that because my heart is turning gray. It's still working for now, but eventually it's going to stop beating and I'll die."
+
+"I've heard of Stone Heart," Felicity says, shaking her head. "Not contagious, but very deadly. Human diseases are scary nya..."
+
+"Can you help?"
+
+Felicity places a finger to her chin, tilting her head. "Disease is something we don't see often in The Tower, but nyai should be able to cure you."
+
+"Thank you so much!" Walking over to her, you embrace her in a hug. "You have no idea how much this means to me..."
+
+"Nyaaaa!" Felicity cries out, pushing against you. "No hyugging nya! I no cure you for free human. That's not how business works."
+
+Your heart sinks. "But I don't have any money..."
+
+"Nyai am well aware of that." After a few moments, she ducks out of your hug. "My sister, Ferris Nyanyanya, runs the Nyapurr Cafe. Tell her you're a patient of mine and she'll give you a job."
+
+[[That sounds good|FelicityCafeRecommendation]]
+
+::FelicityCafeRecommendation
+<<set $metFelicity = true>>\
+<<if $nyapurrCafe != true>>\
+    <<set $nyapurrCafe = true>>\
+    <<set $ramsdaleBusinessLinks.push("[[Nyapurr Cafe]]")>>\
+<</if>>\
+<<set $nyapurrJobOffer = true>>\
+<<set $pills += 1>>\
+"Then no more excuses! You have job nyeow and can afford treatment. You just need to talk to Ferris at Nyapurr Cafe."
+
+"Great!" You move in to hug her, but Felicity swats you away.
+
+"No hyugging!" She turns away, moving back over to her desk. After a few moments of digging around, she walks back over to you and drops a small blue pill into your hands. "This pill will stop disease progressionya. I give first one free, but is $10 per pill after. I know it's expensivenya, but this type of medicine is rare. To be honest, this is a real bargain."
+
+"How much will the cure be?" you ask.
+
+"Five thousand."
+
+Your mouth drops wide open. "Fi-five thousand?!"
+
+"Yes," she says. 
+
+[[That's insane!]]
+[[Is there any way to lower the cost?]]
+
+::That's insane!
+Felicity narrows her eyes at you. "Do you have any idea what curing you entails, hyuman?"
+
+"I mean, you make magic pills . It can't be //that// expensive to cure me."
+
+"No, hyuman, I don't make the pills." Felicity sighs, rubbing her eyes in exasperation. "First of all, nyes, the pills are magic, but curing Stone Heart involves invasive surgery nya. Even if we were to ignore costs of labor and medicine, I'm a doctor, not a magus. I'll need to hire one to help with the surgery and they are //nyot// cheap."
+
+[[Is there any way to lower the cost?]]
+
+
+::Is there any way to lower the cost?
+"Nyo, human, there is nyot. Is there anything else you want to talk about nya?"
+
+<<display "FelicityConversation">>

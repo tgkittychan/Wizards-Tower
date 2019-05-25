@@ -1,0 +1,10 @@
+::Reports [menu]
+<<if $felicityReport != "">>\
+    Felicity's most recent report was...
+
+    <<print $felicityReport>>
+<<else>>\
+    You haven't received any reports yet.
+<</if>>\
+
+<<back [[Return|$return]]>>

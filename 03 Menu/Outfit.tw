@@ -1,0 +1,8 @@
+::Outfit [menu]
+<h3>$job.outfit.name</h3>
+$job.outfit.description
+
+<h3>$player.weapon.name</h3>
+$player.weapon.description
+
+<<back [[Return|$return]]>>

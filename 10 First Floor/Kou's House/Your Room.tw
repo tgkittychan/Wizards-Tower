@@ -1,0 +1,22 @@
+::KouHouseYourRoom
+This room looks like it hasn't been lived in for a while. There are cobwebs up in the wall corners, and a thin layer of dust covers the wooden dresser. Thankfully the bed looks clean enough to sleep in, but it may be a good idea to do some cleaning.
+
+[[Open Wardrobe|Wardrobe]] 
+[[Go to bed|KouHouseSleep]]
+<<gotoJob>>\
+[[Go downstairs|Kou House]]
+
+
+::KouHouseSleep
+<<set $home = $kouHouse>>\
+<<sleep>>\
+
+
+
+::Clean Room KouHouse
+<<set $kouHouseBedroom += 1>>\
+<<set $time.hours += 2>>\
+
+[[Finished cleaning|KouHouseYourRoom]]
+
+

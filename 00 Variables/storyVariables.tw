@@ -1,0 +1,29 @@
+::Story Variables
+/*  Illness Related  */
+<<set $daysLeftToLive = 5>>
+
+/*  Starting job  */
+<<set $job = $unemployed>>
+
+/*  Links  */
+<<include "RamsdaleLinks">>
+
+/*  Romance/relationship Tracker. Named romance for consistency - not all lead to romance  */
+<<set $anumraRomance = 0>>
+<<set $kouRomance = 0>>
+<<set $naomiRomance = 0>>
+
+/*  A placeholder variable that is reused often. Controls things like shopping, hunger, and fatigue  */
+<<set $num = 0>>
+
+/*  Holds doctor reports  */
+<<set $felicityReport = "">>
+
+/*  Money increase/decrease  */
+<<set $home = $homeless>>
+
+/*  Room Cleanliness  */
+<<set $kouHouseBedroom = 0>>
+
+/* Bonus Content Booleans */
+<<set $abdl = false>>

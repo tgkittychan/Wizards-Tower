@@ -1,0 +1,143 @@
+
+
+::Start
+<<textbox "$player.name" `$player.name`>>
+
+Hair Color: <select class="hair">
+    <option value="brown">Brown</option>
+    <option value="black">Black</option>
+    <option value="blonde">Blonde</option>
+    <option value="red">Red</option>
+</select>
+
+Eye Color: <select class="eyes">
+    <option value="brown">Brown</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+    <option value="gray">Gray</option>
+</select>
+
+<!-- [[Continue|SelectTraits]] -->\
+[[Your journey thus far...|The Tower][$gameStarted = true]]
+<<script>>
+    $(document).one(':passageend', function () {
+        $('.hair').on('change', function () {
+            State.variables.player.hair = $(this).val();
+        });
+    });
+    $(document).one(':passageend', function () {
+        $('.eyes').on('change', function () {
+            State.variables.player.eyes = $(this).val();
+        });
+    });
+<</script>>
+
+
+::SelectTraits
+<<set _startingPoints = 15>>\
+Points Remaining: <span id="stat-points">_startingPoints</span>
+<<numberpool "_startingPoints">>
+|stats|k
+|!Strength:|<<numberbox "$player.strength" $player.strength 8 18>>|
+|!Defense:|<<numberbox "$player.defense" $player.defense 8 18>>|
+|!Vitality:|<<numberbox "$player.vitality" $player.vitality 8 18>>|
+|!Dexterity:|<<numberbox "$player.dexterity" $player.dexterity 8 18>>|
+|!Survival:|<<numberbox "$player.survival" $player.survival 8 18>>|
+<<onchange>>
+	<<replace "#stat-points">>_startingPoints<</replace>>
+	<<replace "#skills-link">><<if _startingPoints == 0>>[[Your journey thus far...|The Tower][$gameStarted = true]]<</if>><</replace>>
+<</numberpool>>
+<span id="skills-link"><<if _startingPoints == 0>><</if>></span>
+
+
+::The Tower
+<<set $player.health = $player.vitality * 10>>\
+It's said that somewhere in an uncharted valley there lives a wizard of great power. His power is so great that he must live apart from mortal men, lest his power would destroy them. Far away he built a great tower and now lives there in solitude.
+
+You're a young man who has been searching for The Tower for the past five years. Many have told you not to go. Not only because of the dangers of the uncharted valley, but because of The Tower itself. It would be a death wish, they all said.
+
+Nonetheless, you didn't have a choice. You're dying, slowly but surely, and the secrets of The Tower are your only hope for survival. 
+
+By the time you finally found The Tower, you only had $daysLeftToLive days left to live.
+
+[[Approach the tower|Outside The Tower]]
+
+
+::Outside The Tower
+It's strange. From far away, The Tower was invisible. Now that you're at its doorsteps, however, it's impossible to miss. The Tower is a massive, stone structure so tall it seems to reach the clouds. High above, you can see windows peeking out at the valley behind you. 
+
+"Are you just going to stare all day?"
+
+Snapping your eyes in front of you, you find a strange woman standing with her hands on her hips. Her hair is blue and as if that weren't weird enough, she has goat horns poking out of her head. You feel your <<print $player.penis[$penisSize]>> stiffen slightly as you take in her massive breasts, hidden only by a shirt so tight you can tell she's not wearing a bra underneath. Even her shorts are tight against her curvy hips. 
+
+Looking up, you catch the girl looking at your crotch.
+
+"You should leave," she says, blushing slightly. "Humans don't belong here."
+
+[[Ask to enter the tower]]
+[[Flirt with her|Flirt Goat Girl]]
+
+::Flirt Goat Girl
+<<set $anumraRomance += 1>>\
+"Why?" you ask, taking a step closer. She takes a step back, but you smile at her, confident that she's interested. "I just got here. And I have to say, I'm surprised to see the gate keeper is such a lovely young lady."
+
+"Are you stupid?" The girl's blush deepens, and she offers a shy smile. "I mean, you're not so bad looking yourself, but please. You really can't stay. It's not safe."
+
+"Do you know how far I've traveled to find this place?"
+
+"I can't imagine. I didn't even know there were any humans left." She reaches a out a hand as if to touch you, but pulls back. "Please leave. It really isn't safe."
+
+[[You need to enter the tower|Ask to enter the tower]]
+
+
+::Ask to enter the tower
+"Sorry, but I need to enter that tower." 
+
+The girl sighs. "Will you at least hear me out?"
+
+You nod.
+
+"Look, this tower was created by the great wizard Zexxel. His arcane energies are so strong that his mere presence makes humans sick. That's why he built this tower... and placed a curse on it."
+
+"What's this curse do?"
+
+"Non-magical creatures can't survive inside the tower," the girl says. "So the tower changes them. You may enter as a human, but you won't leave as one."
+
+"I..." You're not sure what to say. When you set off on this journey, you were willing to risk your life. You never even considered you could lose your humanity. "Can you tell me what I'll become?"
+
+The girl shakes her head. "I'm afraid that depends entirely on your actions inside the tower. I've heard that Zexxel's own preferences play a role, but I don't know what that means."
+
+[[If you don't enter, then you will die anyway.|Enter The Tower]]
+[[No, you won't give up your humanity.|Avoid Tower]]
+
+
+::Enter The Tower
+The girl's face stiffens. "Very well. Then I would like to welcome you to The Tower."
+
+After pulling a key from her belt, she unlocks the large wooden doors. The door swings open, revealing a long, dark corridor.
+
+[[Enter the tower|Enter Tower]]
+[[Ask her name|Anumra Name]]
+
+::Anumra Name
+<<set $anumra = true>>\
+<<set $ramsdaleHomeLinks.push("[[Anumra's House|Anumra House]]")>>\
+"May I know your name?" you ask. <<if $anumraRomance >= 1>>Moving closer, you reach out and take her hand in a gentle handshake. "Mine's <<print $player.name>>."<</if>>
+
+The girl smiles<<if $anumraRomance >= 1>>, blushing a little<</if>>. "My name is Anumra."
+
+"Will I be seeing you again?"
+
+<<if $anumraRomance >= 1>>She fidgets with a lock of hair, turning side to side. <</if>>"Well, yeah... I mean if you want to. I live pretty close by." Smiling mischievously, she pulls a piece of paper and a quill from her bag and jots down her address. <<if $anumraRomance >= 1>>As she slides it into your back pocket, you feel her squeeze your butt.<<else>>She hands it to you.<</if>> "Don't forget to come visit, okay?"
+
+[[Enter the tower|Enter Tower]]
+
+
+::Avoid Tower
+The girl's smile brightens. "Thank you so much for listening to me. You seem like a sweet guy; I'd hate to see something happen to you."
+
+You nod numbly. After waving goodbye, you turn to leave.
+
+As you traverse the grassy fields of the uncharted valley, you remember when you had first left home those many years ago. Your doctor had diagnosed you with a deadly disease known as Stone Heart. There was no known cure, but it wasn't contagious and you did have some time left to live. That's why you resolved yourself to find The Tower, in hopes that a cure could be found there.
+
+Your life will be ending soon, but at least you'll get to spend your final days as the human you were meant to be.

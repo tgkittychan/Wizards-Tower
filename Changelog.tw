@@ -1,0 +1,56 @@
+::ChangeLog [menu]
+<<back [[Return|$return]]>>
+
+This is a running log I'm keeping of changes.
+
+<h2>Version 1.0</h2>\
+* Full female transformation is now possible
+* Libido system added for female character. All it does right now is change text in certain places, but I plan on it triggering certain events later.
+* A new, named customer has been added to the waitress job. He's probably the rudest customer yet and can even get banned from the restaurant if you choose the right options.
+* Sex scenes added. Mostly for fully female character, but some for partial male as well. 
+* The protagonist now stops transforming after humanity reaches 0%. In order to give ample time to get desired transformations, players now lose humanity at a slower rate.
+<h3>Bug Fixes</h3>\
+* Sometimes time wouldn't pass correctly during the waitress job. This should be fixed.
+* Fixed a bug where Ferris would offer you a job as a waiter, despite being suitably feminine.
+
+
+<h2>Version 0.8</h2>\
+<h3>Front End</h3>\
+* Stone Heart can actually kill you now. 
+* You're notified when you take a pill and when you miss one.
+* Some text is now colored to make it stand out.
+* Hunger and energy is a part of the game.
+* Sleeping in a home increases hunger/energy.
+* The Nyapurr Cafe sells food.
+* The inn is functional.
+* You can cure Stone Heart
+
+
+<h2>Version 0.51</h2>\
+<h3>Bug Fixes</h3>\
+* Having sex with Naomi wasn't opening up extra dialogue like it was supposed to. This should now be working.
+* If you refused to be a waitress, Ferris would say you're fired, but you'd still keep your job. Now you actually get fired.
+* Tips are now controlled by a variable.
+* You no longer work past 16:00 if you get an event after lunch. 
+<h3>Other Changes</h3>\
+* Your home is set to the last place you slept. This means you can live in the alleyway box if you want to and 'Go home' links will even take you there. This should also work for all other homes in the future. 
+* Go home links take you to your room.
+* You now have the option to go directly home when your shift ends instead of having to navigate out of the Nyapurr Cafe.
+<h3>Back End</h3>
+* A shifts variable controls passage transition for jobs.
+* Homes were turned into objects that are initialized on startup.
+* Consequently, go home links are now controlled by home.location.
+
+<h2>Version 0.5</h2>\
+* There are now facial and butt changes. Racial changes are also now displayed.
+* You're notified of changes as they occur. These occur as dreams.
+* Ferris forces you to work as a waitress once you're feminine enough.
+* If you refuse to work as a waitress, you get fired. You can get your job back by agreeing to be a waitress.
+* The Inventory tab has been replaced by an Outfit tab, which shows a description of your currently worn outfit. For now it shows your work outfit.
+* The wardrobe shows a list of things I need to do before it's functional.
+* The waitress job has customer dialogue. Fair warning: customers are pervs. 
+* Sex scenes.
+* You can quit your job and then ask for it back.
+* You can talk to Naomi during lunch.
+
+<<back [[Return|$return]]>>

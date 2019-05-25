@@ -1,0 +1,56 @@
+::Player
+/*  Sets up player stats at game start  */
+<<set $player = {
+    name: "Dimitre",
+    hunger: 80,
+    sleep: 50,
+    health: 100,
+    combat: 10,
+    charisma: 10,
+    combat: 10,
+    combat: 10,
+    survival: 10,
+    libido: 20,
+    lust: 0,
+    pregnant: false,
+    daysPregnant: 0,
+    weapon: {
+        name: "Old Broadsword",
+        damage: 10,
+        description: "Though its scabbard is worn, you've taken great care of your sword over the years and the blade looks almost new."
+    },
+    hair: "brown",
+    eyes: "brown",
+    sex: "male",
+    race: "human",
+    penis: ["micro penis", "infantile cock", "small cock", "average cock", "large cock"],
+    breasts: ["flat", "AA", "A", "B", "C", "D"],
+    muscle: ["curvy", "dainty", "weak", "lean", "muscular"],
+    bodyHair: ["none", "lacking", "less-hairy", "hairy"],
+    butt: ["flat", "large", "feminine", "round"],
+    face: ["manly", "boyish", "androgynous", "girly", "doll-like"]
+}>>
+
+/*  Array Indexes  */
+<<set $penisSize = $player.penis.length - 1>>
+<<set $breastNum = 0>>
+<<set $bodyHairNum = $player.bodyHair.length - 1>>
+<<set $muscleNum = $player.muscle.length - 1>>
+<<set $buttNum = 0>>
+<<set $faceNum = 0>>
+
+/*  Racial Changes  */
+<<set $humanity = 100>>
+<<set $nyapurr = 0>>
+<<set $ramadium = 0>>
+
+/*  Points variables are used to track nightly changes  */
+/*         Racial          */
+<<set $nyaPoints = 0>>
+/*          Body           */
+<<set $breastPoints = 0>>
+<<set $penisPoints = 0>>
+<<set $buttPoints = 0>>
+<<set $bodyHairPoints = 0>>
+<<set $facePoints = 0>>
+<<set $musclePoints = 0>>

@@ -1,0 +1,42 @@
+::Logak Office
+Logak's office is rather expansive, with an oaken desk sitting atop a large, circular rug. The rest of the room is mostly white, with marble floors. A bay window overlooks Ramsdale. 
+
+[[Logak is here|Talk Logak]]
+
+[[Exit|Ramsdale]]
+
+
+::Talk Logak
+<<set $location = "Logak Office">>\
+"Welcome, $player.name. What can I do for you?"
+
+<<display "LogakConversation">>
+
+
+::Inquire Doctor
+<<set $location = "Logak Office">>\
+<<if $ramsdaleDoctor != true>>\
+    <<set $ramsdaleDoctor = true>>\
+    <<set $ramsdaleBusinessLinks.push("[[Ramsdale Clinic|Doctor Office Ramsdale]]")>>\
+<</if>>\
+Logak nods. "There is one. A nyapurr, named Felicity. Her office is just a block away, actually."
+
+<<display "LogakConversation">>
+
+
+::Inquire Home
+<<set $location = "Logak Office">>\
+<<if $inquireLogakWork != true>>\
+    <<set $inquireLogakWork = true>>\
+    <<set $logakLinks.push("[[Where can I work?|Inquire Work Logak]]")>>\
+<</if>>\
+"Ah, a very good question." Logak's laughter bellows through the room. "I have absolutely no idea. The thing is, nothing is free in Ramsdale. If you want a home, then you need money. To earn money, you need to work."
+
+<<display "LogakConversation">>
+
+
+::Inquire Work Logak
+<<set $location = "Logak Office">>\
+"I don't have any work for you I'm afraid," Logak says. "You should ask around town. Someone always needs help with something."
+
+<<display "LogakConversation">>

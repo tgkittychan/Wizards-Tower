@@ -1,0 +1,35 @@
+::Entering Ramsdale
+As you walk into the town, you find a tall man with goat horns standing beneath a large, wooden sign that says "Ramsdale". His piercing blue eyes regard you with amusement, his mouth curled up into a smile. You can't blame him for being confident, though; this guy is straight up ripped. You have some good muscle yourself, but even years of training haven't gotten you muscles like that.
+
+"Ho, traveler!" the man calls out. His muscles ripple in his shirt as he moves toward you. "It's my first time seeing a human in... well, ever! I was starting to doubt they really exist, but here you are!"
+
+You can't help but crack a smile. You weren't sure what to expect, but this man seems friendly enough. Perhaps The Tower isn't such a scary place after all.
+
+"My name is Logak." The man extends a big hand, smiling down at you. Damn is he tall. "I'd like to welcome you to Ramsdale."
+
+"I'm $player.name," you say, grasping his hand. Wow, his grip is strong. So strong, in fact, that it makes you wince. You gasp, struggling to pull your hand free.
+
+"My apologies!" Logak says, and loosens his grip at once. "My, you humans are as fragile as the nyapurr. No offense, of course; us Ramadium's are a sturdy race."
+
+"What's a nyapurr?"
+
+The man chuckles. "You'll meet some soon enough. Many races live together in the tower, though this floor is mostly us Ramadium's. Come, $player.name - let's discuss your visit in my office."
+
+[[Follow Logak]]
+
+
+::Follow Logak
+<<set $location = "Logak Office">>\
+On the way to his office, you discover that Logak is the mayor of Ramsdale. Your arrival is well known, it seems, and you hear numerous townsfolk whispering about "the human" as you walk past. Most of the townsfolk have goat horns, but occasionally you see someone with cat ears. 
+
+Logak takes a seat at a large, wooden desk, then nods to a seat across from him. You sit down across from him.
+
+"So, $player.name, what brings you here? Our door keeper should have mentioned it's not safe for humans to be here."
+
+"She might have mentioned that," you say with a sigh. "The thing is, I'm dying and this tower is my last hope for survival. I have a deadly disease - oh, but don't worry, it's not contagious."
+
+"My boy, that is such a shame!" Tears well up in his eyes. Then, after a few moments of silence, the man actually starts crying. "My dear boy, Logak will find a cure! On this I swear! Not a soul in Ramsdale shall die on my watch!"
+
+"Uh... thanks." To be honest, you're not sure how to respond to this outburst. Logak seems... enthusiastic... but you doubt he's exactly qualified to help.
+
+<<display "LogakConversation">>

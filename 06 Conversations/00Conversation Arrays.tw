@@ -1,0 +1,24 @@
+::Links
+<<set $logakLinks = [
+    "[[Are there any doctors in town?|Inquire Doctor]]",
+    "[[Where can I stay?|Inquire Home]]",
+]>>
+
+<<set $felicityLinks = [
+    "[[Buy pills]]",
+    "[[Let her run tests]]",
+    "[[Pay for the cure|FelicityPayCure]]"
+]>>
+
+<<set $ferrisLinks = [
+    "[[Ask about job|FerrisAskJob]]"
+]>>
+
+<<set $kouLinks = [
+    "[[How are things between us?|Kou Relationship]]"
+]>>
+
+<<set $naomiLinks = [
+    "[[Check her out|FlirtNaomi]]",
+    "[[Ask how she likes working here|NaomiAskOpinionOfJob]]"
+]>>

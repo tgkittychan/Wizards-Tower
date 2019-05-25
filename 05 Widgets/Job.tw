@@ -1,0 +1,19 @@
+::My Jobs [widget]
+<<widget gotoJob>>\
+    <<if $job.name != "Unemployed" && $dayoff == false>>\
+        <<if $player.sleep <= 0>>\
+            You are too tired to go to work today.
+        <<else>>\
+            <<if $time.hours <= 8 && $time.hours >= 6>>\
+                [[Go to work|$job.name][$time.hours = 8]]
+                
+            <<else>>\
+                It's too late to go to work now.
+
+            <</if>>\
+        <</if>>\
+    <<else>>\
+        You don't have work today.
+        
+    <</if>>\
+<</widget>>\

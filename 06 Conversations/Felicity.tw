@@ -1,0 +1,137 @@
+::Talk To Felicity
+"Welcome, <<if $player.race == "human">>hyuman<<elseif $player.race == "nyapurr">>sister<<else>>friend<</if>>. What can I do for you?"
+
+<<include "FelicityConversation">>
+
+
+::FelicityPayCure
+<<if $money >= 5000>>\
+    "The cure is $5000 nya, but I see you can afford that. Are you ready to proceed?"
+
+    [[Yes, cure me|FelicityStoneheartCure][$money -= 5000]]
+    [[On second thought, maybe later|Talk To Felicity]]
+<<else>>\
+    "The cure is $5000," she says "Please come back when you have the money. Is there anything else I can help you with nya?"
+
+    <<include "FelicityConversation">>
+<</if>>\
+
+
+::FelicitySexChanged
+"Uh... what?" she asks.
+
+You feel your face heat up a little. "I said my... um... my sex changed. I have a vagina. It happened over night."
+
+"Oh." Felicity scratches the back of her head, clearly unsure of what to say. "Um... congratulations nya?"
+
+"It's not a good thing!"
+
+"Sorry," she says. "Actually, I suspected this might happen."
+
+"What do you mean?"
+
+"I've never seen it myself, but I've heard hyuman men who enter The Tower are feminized." She walks over to her desk, picking up a piece of paper. It looks like one of her reports. "Apparently some men retain certain masculine traits, while others are completely feminized. I guess you're the latter nya..."
+
+"Is there any way to reverse this?"
+
+"Nyot that I know of," she says. "Though I'm not the person to ask. You should ask a magus; I think most of them were around back when humans still visited."
+
+Great. Where are you supposed to find one of those?
+
+<<include "FelicityConversation">>
+
+
+::FelicityStoneheartCure
+<<set $felicityLinks.delete( "[[Pay for the cure|FelicityPayCure]]")>>\
+<<set $felicityLinks.delete( "[[Buy pills]]")>>\
+After counting out your money, Felicity opens a door at the back of her office. When Felicity turns on the lights, she screams, "Nyaaaaaa!" There's a man sitting on a chair. "Wh-who...you...why?!"
+
+"Now, now, Mrs. Nyanyanya," the man says, smiling at her as if he's in on some joke she doesn't know about. You can't help but notice his glowing yellow eyes. "You were about to call for a magus, right?" The man's smile grows wider and he snorts, covering his mouth with a hand. "Well here I am."
+
+Felicity wipes some sweat off her forehead, sighing in relief. "I hate working with you pyeople."
+
+The man snorts loudly and then bursts out laughing. "That makes two of us! The other maguses have no sense of humor."
+
+You suspects that this man's 'sense of humor' involves scaring people, but you don't bother to say that. Judging by the irritated look on her face, Felicity is thinking the exact same thing.
+
+"So you're the one, huh," the man says, looking you up and down. <<if $player.sex == "female">>"My, you've become such a beautiful lady. <<elseif $player.sex == "male" && $faceNum >= 3 && $bodyHairNum == 0 && $muscleNum == 0>>"I see you're still a boy, but with a body like that you might as well be a girl. Looking good, babe!" The man chuckles softly and you glare at him. "<<else>>"I don't know how you kept so much of your masculinity, but The Tower has touched you all the same. <</if>>Interesting what the magics of The Tower does to the human body, hmm?"
+
+You'd like nothing more than to ask him about that, but Felicity ushers you over to a bed. As you sit on the strange, firm mattress, it quickly becomes clear that this is an operating room. It's made of the same dark wood as the rest of the clinic, yet everything is kept perfectly clean and sterile. 
+
+"You'll have to be unconscious for this procedure," Felicity says. She pulls out a syringe half full of a strange, orange liquid and then grabs your arm, injecting you with it. You instantly feel your consciousness begin to fade. "Stone Heart is a mutation in your DNA. It's the presence of a cell that shouldn't exist in the first place, which multiplies and slowly turns your heart to stone."
+
+"Blah blah blah," the magus says. "Sciencey gobblety goop. Who cares?"
+
+Felicity glares at him, then turns back to you. "We're going to use a combination of magic and surgery to remove all those cells." She smiles, squeezing your hand reassuringly. It's becoming hard to keep your eyes open. "But don't worry. I've worked with him before. That guy's an idiot, but you're in good hands."
+
+[[Everything goes dark|FelicityStoneHeartCured][$daysLeftToLive = -1]]
+
+
+::FelicityStoneHeartCured
+<<hour 8>>\
+<<set $player.sleep = 100>>\
+<<set $player.hunger = 100>>\
+When you awake, you find yourself lying in one of the beds at the clinic. The yellow-eyed man is nowhere to be found, but Felicity is slumped into a chair. She looks tired, as though she's been awake for a long time. 
+
+When she noticed you're awake, she smiles. "Welcome back, $player.name. How do you feel?"
+
+"I feel... good." 
+
+It was true. You had grown used to it, but now that it was gone, you realize you had //felt// the disease inside your body. No longer was there a tightness in your chest or the occasional pain. You'd never have to deal with that again. 
+
+"Any concerns?"
+
+You shake your head. "No, ma'am."
+
+"Well as you've probably guessed, the surgery was a success. Congratulations." She stands, walking over to the door, but stops with her back turned to you. "I'm glad you were able to be saved." Then she steps through the door, leaving you alone.
+
+@@#good;You have been cured of Stone Heart!@@
+
+[[Exit|$location]]
+
+
+::Buy pills
+<<set $num = 1>>\
+"Hyow many pills would you like to buy?" <select class="pillsSelect"><<for _num = 1; _num <= 10; _num++>><option @value="_num">_num</option><</for>></select>
+
+<<button [[Purchase pills|Buy pills]]>>
+    <<if $money >= $num * 10>>\
+        <<set $pills += $num>>\
+        <<set $money -= $num * 10>>\
+    <<else>>\
+        <<script>>UI.alert("You don't have enough money nya!");<</script>>
+    <</if>>\
+<</button>>
+
+[[Nevermind|Talk To Felicity]]
+
+<<script>>
+    $(document).one(':passageend', function () {
+        $('.pillsSelect').on('change', function () {
+            State.variables.num = Number($(this).val());
+        });
+    });
+<</script>>
+
+
+::Let her run tests
+<<hour 2>>\
+<<set $felicityReport = felicityTest($muscleNum, $breastNum, $buttNum, $player.race, $humanity, $nyapurr, $femininity, $player.sex, $player.libido)>>\
+"I'll admit I've been looking forward to this nya~" Felicity grabs you by the arm, leading you toward's the doctor's bed. "Just lay down, okay <<if $player.race == "human">>humanya<<else>>nya<</if>>?"
+
+Felicity doesn't seem to be testing for anything specific. At one point, she grabs hold of your tongue and makes a comment about the color. At another point she has you chew on a strange, disgusting pill and then shines a light in your eyes. None of the tests make any sense, but when the tests are over you have a report lying in your hands.
+
+<h3>Pre-Tower Status</h3>
+Race:       Human
+Sex:        <<print $player.sex>>
+Ailments:   Stone Heart
+
+<h3>Current Status</h3>
+    Humanity:   <<print $humanity + "%">>
+    Nyapurr:    <<print $nyapurr + "%">>
+    Ramadium:   <<print $ramadium + "%">>
+
+<h3>Final notes</h3>
+<<print $felicityReport>>
+
+[[Set aside report|Talk To Felicity]]

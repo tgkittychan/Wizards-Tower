@@ -1,0 +1,59 @@
+::FiredFromCafe
+Ferris smiles as you approach. "Welcome, <<print $player.name>>nya. Are you finally ready to be a cute waitress?"
+
+[[Fine. I'll do it.|WaitressPromotion2]]
+[[No, I'm not.|Nyapurr Cafe]]
+
+
+::WaitressPromotion
+<<set $nyapurrEvent = false>>\
+As you settle into a chair in front of Ferris's desk, you take a look around the office. 
+
+"Do you knyow why you're here?"
+
+"No, I don't."
+
+"I've noticed your changes," she says. "It's nyot a bad thing. You look very cute nya, but that's why you cyan't work as a waiter anymore."
+
+Your blood runs cold. "Are you saying I'm fired?"
+
+"Nyo nyo nyo," she says, waving her hands in front of her. "You can still work here, but it'll be as a cute waitress."
+
+"Um, I'm still a guy..."
+
+"I knyow, but you're so cute! Something about you being a boy makes it even better nya."
+
+[[I don't want to be a waitress!|DenyWaitress]]
+
+
+::DenyWaitress
+<<set $time.hours += 1>>\
+"I'm afraid it's nyot up for discussion," she says, shaking her head. "Either you work as a waitress or you're fired."
+
+When you don't say anything, Ferris sighs. "You knyow, waitresses always make more from tips. And you're so cute I just knyow the customers will like you."
+
+She is literally trying to force you to prance around in a skirt, but would it really be that bad? You really need money and the sooner you can get cured, the sooner you can leave this tower. Yet a part of you is revolted by the idea. You're supposed to be a man!
+
+[[Fine. I'll be a stupid waitress.|WaitressPromotion2]]
+[[No. I refuse.|DenyWaitressFired]]
+
+
+::WaitressPromotion2
+<<set $dayoff = true>>\
+<<set $job = $nyaWaitress>>\
+<<set $oufit = $nyaWaitress.outfit>>\
+<<set $money += $job.wages * 8>>\
+<<set $panties = "frilly white panties">>\
+<<set $wardrobe.push($outfit)>>\
+<<set $declinedWaitress = false>>\
+"Great!" she says, smiling gleefully. "You're so cute, I just knyow the customers will love you. I'm giving you the day off and a full day's pay. You've earned it nya~"
+
+[[Leave|Nyapurr Cafe]]
+
+
+::DenyWaitressFired
+<<set $job = $unemployed>>\
+<<set $declinedWaitress = true>>\
+"Then you're fired," she says. "I'm disappointed, but I understand if you nyeed time. Come back when you're ready to be a cute waitress nya~"
+
+[[Leave|Nyapurr Cafe]]

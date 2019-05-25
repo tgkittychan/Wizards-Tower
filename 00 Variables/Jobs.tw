@@ -1,0 +1,53 @@
+::Jobs
+/*  Base amount tipped where applicable  */
+<<set $tip = 20>>\
+/*  Jobs were originally set up as widgets. Switched over to objects because it seems more efficient  */
+<<set $unemployed = {
+    name: "Unemployed",
+    wages: 0,
+    outfit: {
+        name: "Adventurer's Outfit",
+        value: 50,
+        description: 
+        `Though worn from travel, your clothes are very comfortable. You've got an old white top, which has a few holes in it, and a well worn pants. Beneath it all is a pair of men's briefs.
+        
+        Though a bit old, the outfit fits you rather well, showing off your ${$player.muscle[$muscleNum]} body.`
+    }
+}>>
+
+<<set $nyaWaiter = {
+    name: '"Nyapurr" Waiter', 
+    wages: 15, 
+    outfit: {
+        name: "Nyapurr Cafe Men's Uniform",
+        value: 200,
+        description: 
+        "The men's unform for the Nyapurr Cafe is a fairly simple outfit. It's mostly black, with a black button up shirt, a pair of clean black slacks, and a black pair of boots. The only part of the uniform that isn't black is a brown apron, which all employees are required to wear."
+    }
+}>>
+
+<<set $nyaWaitress = {
+    name: "Nyapurr Waitress", 
+    wages: 15, 
+    outfit: {
+        name: "Nyapurr Cafe Waitress Uniform",
+        value: 300,
+        description: 
+        "Unlike the men's uniform, the women's is anything but simple. It's still all black and brown, but where the top was a respectable button up suitable for a man, the women's is a tight blouse that'll bring attention to your chest. The skirt is even worse; it's pretty short, stopping at your upper thigh, and has brown trim at the bottom. Everyone can see your legs, meaning they all know how smooth and feminine they are.<br><br>" +
+        
+        "You can't help but wonder if Ferris purposely designed the uniform this way to bring in male customers."
+    }
+}>>
+
+<<set $baby = {
+    name: "Baby", 
+    wages: 0, 
+    outfit: {
+        name: "Baby Rhomper",
+        value: 300,
+        description: 
+        "Somehow, you've found yourself trapped in what looks like an adult-sized baby's rhomper. It's entirely pink, with white dots all over it and the words 'I <3 My Nappies' written across the chest. As if that weren't humiliating enough, the bottom of it poofs out obscenely, outlining what can only be a big, poofy baby diaper.<br><br>" +
+        
+        "The diaper forces your legs apart and each of your movements are accompanied by a crinkling sound. A small padlock locks the zipper in place, making the outfit impossible to remove."
+    }
+}>>

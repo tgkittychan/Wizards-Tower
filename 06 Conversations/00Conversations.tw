@@ -1,0 +1,39 @@
+::LogakConversation
+<<set $logakLinks.sort()>>\
+<<for _i = 0; _i < $logakLinks.length; _i++>>
+  $logakLinks[_i]
+<</for>>
+
+[[End Conversation|$location]]
+
+::FelicityConversation
+<<set $felicityLinks.sort()>>\
+<<for _i = 0; _i < $felicityLinks.length; _i++>>
+  $felicityLinks[_i]
+<</for>>
+
+[[End Conversation|$location]]
+
+::KouConversation
+<<set $kouLinks.sort()>>\
+<<for _i = 0; _i < $kouLinks.length; _i++>>
+  $kouLinks[_i]
+<</for>>
+
+[[End Conversation|$location]]
+
+::FerrisConversation
+<<set $ferrisLinks.sort()>>\
+<<for _i = 0; _i < $ferrisLinks.length; _i++>>
+  $ferrisLinks[_i]
+<</for>>
+
+[[End Conversation|$location]]
+
+::NaomiConversation
+<<set $naomiLinks.sort()>>\
+<<for _i = 0; _i < $naomiLinks.length; _i++>>
+  $naomiLinks[_i]
+<</for>>
+
+[[End Conversation|$location]]

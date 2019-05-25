@@ -1,0 +1,29 @@
+::Printed Text[widget]
+<<widget penis>>\
+    <<if $humanity > 0>>\
+        <<set $penisPoints += 3>>\
+        @@#change;A strange sensation - like static - runs through your cock.@@
+
+    <</if>>\
+<</widget>>\
+<<widget libido>>\
+    <<if $humanity > 0>>\
+        <<set $player.libido += 5>>\
+        @@#change;Your body heats up ever so little with a growing arousal.@@
+
+    <</if>>\
+<</widget>>\
+<<widget booty>>\
+    <<if $humanity > 0>>\
+        <<set $buttPoints += 3>>\
+        @@#change;For just a moment, there's a strange tingling sensation that envelops your butt.@@
+
+    <</if>>\
+<</widget>>\
+<<widget boobs>>\
+    <<if $humanity > 0>>\
+        <<set $breastPoints += 3>>\
+        @@#change;A strange feeling, like electricity, runs through your nipples. Afterwards they're left feeling oddly itchy.@@
+
+    <</if>>\
+<</widget>>\

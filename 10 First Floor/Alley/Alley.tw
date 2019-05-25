@@ -1,0 +1,10 @@
+::Ramsdale Alley
+In one of the back alleys of Ramsdale, a large box sits alone in a corner. It looks like someone might have lived here once, as there are old blankets and trash littering the ground. The original owner is nowhere to be found, however.
+
+[[Sleep in box|SleepBox]]
+<<gotoJob>>\
+[[Leave|Ramsdale]]
+
+::SleepBox
+<<set $home = $cardboardBox>>\
+<<sleep>>\

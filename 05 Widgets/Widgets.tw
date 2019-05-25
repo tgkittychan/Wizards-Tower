@@ -1,0 +1,177 @@
+::My Widgets [widget]
+<<widget sleep>>\
+    <<set $money -= $home.rent>>\
+    <<if $money < 0>>\
+        <<set $money += $home.rent>>\
+        You are unable to afford rent tonight and cannot sleep here.
+
+        [[Continue|$home.location]]
+    <<else>>\
+        <<set _sleeping = true>>\
+        /*  Changes stop occurring when your humanity is gone  */\
+        <<if $humanity > 0>>\
+            /*  Changes that always occur. Because they're consistent, they add up fast!  */\
+            <<if $breastNum < 2>>\
+                <<set $breastPoints += 2>>\
+            <</if>>\
+            <<if $penisSize > 2>>\
+                <<set $penisPoints += 1>>\
+            <</if>>\
+            <<if $buttNum < 2>>\
+                <<set $buttPoints += 1>>\
+            <</if>>\
+            <<set $bodyHairPoints += 3>>\
+            <<if $faceNum < 3>>\
+                <<set $facePoints += 3>>\
+            <</if>>\
+            <<set $musclePoints += 3>>\
+            <<change>>\
+        <</if>>\
+        /*  Time increase  */\
+        <<silently>>\
+            <<for _i = 0; _i != 7 ; _i = $time.hours>>\
+                <<set $time = changeTime($time)>>\
+                <<set $time.minutes = 0>>\
+                <<hour 1>>\
+            <</for>>\
+        <</silently>>\
+        /*  Variables that get reset daily  */\
+        <<set $takenPill = false>>\
+        <<set $dayoff = false>>\
+        <<if $time.dayNum == 5 || $time.dayNum == 6>>\
+            <<set $dayoff = true>>\
+        <</if>>\
+        <<set $shift = 0>>\
+        <<if $player.pregnant>>\
+            <<if>>\
+                
+            <<else>>\
+            <</if>>\
+        <</if>>\
+        <<set _sleeping = false>>\
+        <<if $home.eat > 0>>\
+            <<set $player.hunger += $home.eat>>\
+            After waking up, you take some time to eat breakfast.
+
+        <</if>>\
+        [[Get ready for the day|$home.location]]
+    <</if>>\
+<</widget>>\
+\
+\/*Change widgets control nightly changes. Passes parameters into changeFullArg*/\
+<<widget change>>\
+    <<changeFullArg $breastPoints $buttPoints $penisPoints $bodyHairPoints $facePoints $musclePoints>>\
+<</widget>>\
+\
+<<widget changeFullArg>>\
+    /*  _num controls how fast body changes occur  */\
+    <<set _num = 10>>\
+    <<if $facePoints >= _num && $faceNum != $player.face.length - 1>>\ 
+        <<set $faceNum += 1>>\
+        @@#dream;You see a woman's face in the dark. She has full, pouty lips and flawless skin. She blows a kiss your way, as if trying to tempt you. @@
+        -----------------------------------------------------------
+        <<set $facePoints -= _num>>\
+    <</if>>\
+    <<if $breastPoints >= _num && $breastNum != ($player.breasts.length - 1)>>\
+        <<set $breastNum += 1>>\
+        @@#dream;You're in your bedroom with your ex behind you, fastening a bra around your chest. She's always been a little bit kinky, but once the bra snaps in place you can't help but notice it fits a bit too well. Looking down, you find large breasts sitting within the bra.
+
+        "There," she says with a smile. "Girls shouldn't be running around without a bra. Aren't you glad we're friends?"
+
+        In sheer and utter confusion, you shove her aside and run out of the room.@@
+        -----------------------------------------------------------
+        <<set $breastPoints -= _num>>\
+    <</if>>\
+    <<if $buttPoints >= _num && $buttNum != $player.butt.length - 1>>\
+        <<set $buttNum += 1>>\
+        @@#dream;As you walk through a general store, you hear someone laughing behind you. Thinking nothing of it, you walk down the aisle, hoping to find something good. 
+
+        "Look at that guy's butt," someone says with a laugh. It's a man's voice. "It looks like it belongs on a chick."
+
+        You're suddenly very aware of your feminine gait. You turn just a little, enough to see a group of guy's staring straight at you. Then you turn and quickly make your escape, feeling your butt jiggling behind you as the men erupt into laughter.@@
+        -----------------------------------------------------------
+        <<set $buttPoints -= _num>>\
+    <</if>>\
+    <<if $penisPoints >= _num && $penisSize != 0>>\
+        <<set $penisSize -= 1>>\
+        @@#dream;You see your ex lying on your bed with her legs spread open, ready to receive you. You drop your pants to the ground, position yourself between her legs, and thrust... only for nothing to happen. Confused, you look down to see a tiny little micropenis looking back up at you.
+
+        "Oh for fuck's sake," she says with a scowl. "Is this some kind of joke?"
+
+        Face flushing red, you run out of the room in humiliation.@@
+        -----------------------------------------------------------
+        <<set $penisPoints -= _num>>\
+    <<elseif $penisPoints >= _num && $penisSize == 0 && $player.sex == "male">>\
+        <<set $player.sex = "female">>\
+        <<set $felicityLinks.push("[[Ask about your sex change|FelicitySexChanged]]")>>\
+        @@#dream;You see your ex lying on your bed with her legs spread open, but there's something different this time. For some odd reason, you know you're dreaming. In fact, you've had this dream before.
+        
+        "What's wrong?" she asks. "Come fuck me. I want that big cock of yours." 
+        
+        //This is just a dream,// you assure yourself. //She's not really here.//
+        
+        For some reason, your clothes suddenly evaporate, drifting off your body like smoke. Your ex is smiling up until looks at your crotch. Then her face becomes one of utmost disappointment.
+        
+        She scowls. "You're a girl?"@@
+
+        You awake in a cold sweat. That dream was different from last time.
+
+        With trembling hands, you pull your pants out in front of you. You reach down, trying to find your micro penis, but you find nothing. Panicked, you search harder. It has to be somewhere!
+
+        When you find something else, the color drains from your face. "No..." It's gone. You're a girl now.
+        -----------------------------------------------------------
+    <</if>>\
+    <<if $bodyHairPoints >= _num && $bodyHairNum != 0>>\
+        <<set $bodyHairNum -= 1>>\ 
+        @@#dream;You're in front of a mirror, staring at your reflection in frustration. No matter how hard you try, you just can't grow a beard. All the other boys your age have one, yet you can't even grow a single hair.
+
+        Hanging your head dejectedly, you walk out of the room.@@
+        -----------------------------------------------------------
+        <<set $bodyHairPoints -= _num>>\
+    <</if>>\
+    <<if $musclePoints >= _num && $muscleNum != 0>>\
+         <<set $muscleNum -= 1>>\
+         @@#dream;You're in a changing room surrounded by half-naked muscular men. The men point at you and laugh, loudly saying that this isn't a place for wimps. To your utter humiliation, you find that you're weak and scrawny.
+
+         "S-sorry!" you manage to stammer out before fleeing from the room.@@
+         -----------------------------------------------------------
+         <<set $musclePoints -= _num>>\
+    <</if>>\
+    /*  Controls Nyapurr racial changes  */\
+    <<if $nyaPoints >= 10>>\        
+        <<nya>>\
+        @@#dream;You're in a town you lived in long ago. A $player.hair cat sits on a nearby table, its eyes transfixed on you. The cat looks familiar, as if you've met him somewhere before.@@
+
+        <<if $nyapurr == 20>>\
+        @@#dream;The cat's ears twitch and oddly, yours do the same. Glancing over at a mirror, you find yourself, but with a pair of $player.hair cat ears sitting atop your head. @@
+
+        <<elseif $nyapurr == 40>>\
+        @@#dream;The cat stretches, lifting its tail up into the air. Oddly, you find yourself copying it, almost against your will. Then you realize you, too, are lifting your tail up into the air.@@
+
+        <<elseif $nyapurr == 70>>\
+        @@#dream;The cat opens its mouth and meows at you. You meow back at the exact same time. A few moments later you clamp your hands over your mouth, confused about why you just did that.@@
+
+        <<elseif $nyapurr == 100>>\
+        @@#dream;As you gaze into its eyes, recognition floods into you. This cat is you. Perhaps this path could have been avoided, but the tower has sealed your fate.@@
+
+        <</if>>\
+        <<set $nyaPoints -= 10>>\
+    <</if>>\
+<</widget>>\
+\/*Race change widgets*/\
+<<widget nya>>\
+    <<set $nyapurr += 5>>\
+    <<set $humanity -= 5>>\
+    <<if $nyapurr > 50>>\
+        <<set $player.race = "nyapurr">>\
+    <</if>>\
+    <<if $nyapurr > 100>>\
+        <<set $nyapurr = 100>>\
+    <</if>>\
+    <<if $nyapurr < 0>>\
+        <<set $nyapurr = 0>>\
+    <</if>>\
+    <<if $humanity < 0>>\
+        <<set $humanity = 0>>\
+    <</if>>\
+<</widget>>\

@@ -1,0 +1,31 @@
+::MagicHandsSubmit
+<<boobs>>\
+<<set $breastPoints += 1>>\
+This guy is clearly a perv, but you want that tip and he seems harmless enough. So you sit on his lap, willing to let him have his fun. 
+
+The 'magic hands' guy reaches up for your chest, rubbing your breasts through your shirt. <<if $breastNum <= 1>>Your chest is pretty flat so it never really goes beyond rubbing, but oddly it feels kind of good.<<else>>He starts to really get into it, groping and fondling your breasts with enthusiasm.<</if>> You feel his cock grow rock hard, pressing up against you.
+
+<<if $player.set == "male">>Your $player.penis[$penisSize] grows hard in your pants and you're momentarily worried he might discover you, but luckily this guy doesn't seem to care about anything other than your chest.<<else>>It starts to grow hot between your thighs. A part of you wonders if he might try to take it further, but it seems he only cares about your breasts<</if>>
+
+Eventually he lets out a contented sigh and stops. "Oh, um... sorry." You glance over your shoulder at him, wondering why he's apologizing. Then you notice his pants are wet and sticky.
+
+"Oh my god..." The man blushes deeply. His friend facepalms, shaking his head in disbelief. "I'm so sorry! Your boobs just felt so exquisite and I..."
+
+[[It's not a big deal|MagicHandsNotABigDeal]]
+[[Just shut the hell up|MagicHandsShutUp]]
+
+
+::MagicHandsShutUp
+"Sorry," the man says one last time. "Well, uh... here's your tip."
+
+[[Leave|$job.name + $shift][$money += $tip]]
+
+
+::MagicHandsNotABigDeal
+The man's mouth drops open. "You... you're an angel!"
+
+"I mean, it's really not a big deal," you say again. "Really. It's not. It happens."
+
+The weirdo has tears in his eyes. "I'm throwing in an extra $20 just for you. Again, thank you!"
+
+[[Leave|$job.name + $shift][$money += $tip + 20]]

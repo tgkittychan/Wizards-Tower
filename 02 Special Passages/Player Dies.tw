@@ -1,0 +1,16 @@
+::StoneheartDeath
+<<set $location = "StoneheartDeath">>\
+Something is wrong. Your heart feels oddly tight and is beating fast, desperate, as if it's about to burst out of your chest. 
+
+In horror, you realize that this is the final stage of Stone Heart. You struggle to move forward, thinking that if you can just make it to a doctor, then maybe they can save you. You collapse, hitting the ground. Everything is quiet now. Quiet and dark, growing ever darker.
+
+Soon the darkness consumes you. 
+
+
+::HungerDeath
+<<set $location = "HungerDeath">>\
+You had been malnourished for a while, but you now find yourself crawling. Desperately you look around in search of food, but find nothing. You try to pull yourself forward, but your body betrays you and your arms stop moving.
+
+//Help//, you find yourself thinking. //I'm not dead yet. Please help me!//
+
+No-one comes. Long ago you thought Stone Heart would be the thing to end you, but in the end you simply wasted away.

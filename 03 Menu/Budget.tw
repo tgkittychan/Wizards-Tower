@@ -1,0 +1,22 @@
+
+::Budget Stats [menu]
+<table class="in-passage">\
+    <tr>\
+        <th class="ipth" style="padding: 0px 10px 0px 10px">Name</th>
+        <th class="ipth" style="padding: 0px 10px 0px 10px">Amount</th>
+        <th class="ipth" style="padding: 0px 10px 0px 10px">Daily Change</th>
+    </tr>\
+    <tr class="iptr">\
+        <td class="iptd" style="padding: 0px 10px 0px 10px"><<print $job.name>></td>
+        <td class="iptd" style="padding: 0px 10px 0px 10px">+ $<<print $job.wages>></td>
+        <td class="iptd" style="padding: 0px 10px 0px 10px">+ $<<print $job.wages * 8>></td>
+    </tr>\
+    <tr class="iptr">\
+        <td class="iptd" style="padding: 0px 10px 0px 10px"><<print $home.name>></td>
+        <td class="iptd" style="padding: 0px 10px 0px 10px">- $<<print $home.rent>></td>
+        <td class="iptd" style="padding: 0px 10px 0px 10px">- $<<print $home.rent>></td>
+    </tr>\
+</table>\
+Total Earned Daily: $<<print $job.wages * 8 - $home.rent>>
+
+<<back [[Return|$return]]>>

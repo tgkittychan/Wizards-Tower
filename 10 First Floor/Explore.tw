@@ -1,0 +1,40 @@
+::Explore Ramsdale
+<<set _num = random(5)>>\
+<<if $ramsdaleHotel != true && _num == 0>>\
+    <<set $ramsdaleHotel = true>>\
+    <<set $ramsdaleBusinessLinks.push("[[Ramsdale Inn]]")>>\
+    Just at the edge of town a large, wooden inn stands against the swamp. Ball-shaped paper lamps, each with the same floral design, dangle from hooks in the roof of the deck. Through the large glass windows those same lamps light the inside, filling the place with a glow.
+
+    [[Enter The Inn|Ramsdale Inn]]
+<<elseif $nyapurrCafe != true && _num == 1>>\
+    <<set $nyapurrCafe = true>>\
+    <<set $ramsdaleBusinessLinks.push("[[Nyapurr Cafe]]")>>\
+    While exploring Ramsdale, you find The Nyapurr Cafe. 
+
+<<elseif $ramsdaleDoctor != true && _num == 2>>\
+    <<set $ramsdaleDoctor = true>>\
+    <<set $ramsdaleBusinessLinks.push("[[Clinic|Doctor Office Ramsdale]]")>>\
+    While exploring Ramsdale, you find the Ramsdale Clinic. 
+
+<<elseif $alleyBox != true && _num > 2>>
+    <<set $alleyBox = true>>\
+    <<set $ramsdaleHomeLinks.push("[[Dark Alley|Ramsdale Alley]]")>>\
+    In one of the back alleys of Ramsdale, a large box sits alone in a corner. It looks like someone might have lived here once, as there are old blankets and trash disintegrating from the weather. The original owner is nowhere to be found, however.
+
+    If you're desperate, then perhaps you could sleep here.
+
+    [[Stay in the Alley|Ramsdale Alley]]
+<<else>>\
+    <<if $abdl>>\
+         While exploring one of Ramsdale's back alleys, you suddenly feel a strange, prickling sensation in your neck. Before you can make sense of what is happening your body has hit the ground, your vision going dark. High heels clack against the cement as someone approaches, stopping right in front of your fallen body. You just barely catch a glimpse of bright red high-heels before everything goes dark.
+
+         [[Wake up|NyxiSetup]]
+    <<else>>\
+        You spend some time exploring Ramsdale, but you don't find anything new.
+    <</if>>\
+
+<</if>>\
+<<link "Explore" "Explore Ramsdale">>
+    <<hour 1>>
+<</link>>
+[[Quit exploring|Ramsdale]]

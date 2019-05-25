@@ -1,0 +1,131 @@
+body{
+    background-image: url(images/Stone_04_UV_H_CM_1.jpg);
+}
+
+h1, h2, h3{
+    margin: 0px;
+}
+
+#passages{
+    background-color: #202020;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 5px solid #3F5A00;
+}
+
+#passages a{
+    color: #FF93AC;
+}
+#passages a:hover{
+    color: #A41FBD;
+    text-decoration: none;
+    border-bottom: none;
+}
+button{
+    background-color: #3F5A00;
+    border-color: #758833;
+}
+button:hover{
+    background-color: #758833;
+    border-color: #758833;
+}
+
+#checkbox {
+    width: 30px;
+    height: 30px;
+    background:white;
+    border-radius:5px;
+    border:2px solid #555;
+}
+
+/*  Sidebar   */
+#ui-bar{
+    border-right: 5px solid #3F5A00;
+    background-image: url(images/use_your_illusion.png);
+}
+
+#menu li a:hover, #ui-bar-toggle:hover{
+    background-color: #3F5A00;
+}
+
+#story-title{
+    display: none;
+}
+.sideTable{
+    margin-left: 45px;
+}
+.sideTableLeft{
+    text-align: right;
+}
+.sideTableRight{
+    padding-left: 20px;
+}
+
+.topRowPadding{
+    padding-top: 20px;
+}
+
+/*  Tables  */
+[id^="Stats-Box"]{
+    min-width: 3em !important;
+    width: 3em !important;
+    text-align: center;
+}
+.in-passage{
+    border-collapse: collapse;
+    width: 100%;
+}
+.in-passage, .ipth, .iptd{
+    border: 3px solid #3F5A00;
+}
+.iptd{
+    padding-left: 20px;
+}
+
+/*  Passage Text Coloring  */
+#good {
+    color: cyan;
+}
+#warning {
+    color: red;
+}
+#change {
+    color: pink;
+}
+#dream {
+    color: #a0b946;
+}
+
+/*  Graphic Meters  */
+.meter {
+	position: relative;
+	width: 100%;
+	background-color: gray;
+    text-align: center;
+}
+.bar {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.meter, .bar{
+    height: 1.5em;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.hungerBar {
+    background-color: #3F5A00;
+}
+
+.malnourished{
+    background-color: red;
+}
+
+.sleepBar {
+    background-color: #FFCC00;
+}
+
+#barText{
+    color: black;
+}

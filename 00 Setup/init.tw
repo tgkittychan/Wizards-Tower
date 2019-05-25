@@ -1,0 +1,15 @@
+::StoryTitle
+Wizard's Tower
+
+:: StorySettings
+ifid:088d7739-9e08-46f1-97f4-3d947ea79d84
+
+:: StoryInit
+<<include "Player">>
+<<include "Jobs">>
+<<include "Homes">>
+<!-- <<include "Stats">> -->\
+<<include "Story Variables">>
+<<include "Links">> /*  Found in Conversations/Conversation Arrays  */
+<<include "Time Variables">>
+<<include "Inventory">>

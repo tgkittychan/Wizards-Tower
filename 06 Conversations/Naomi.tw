@@ -1,0 +1,147 @@
+::TalkNaomi
+<<if $location == $job.name + $shift>>\
+    "<<print $player.name>>nya," Naomi says, smiling. "What's up? I see you like the tempura."
+
+<</if>>\
+<<include NaomiConversation>>
+
+::FlirtNaomi
+You glance from her face to her chest, thinking again about how good this girl looks. The fact that Naomi's always saying lewd things only makes it even hotter. You feel your $player.penis[$penisSize] stiffen a little as you think about what you'd like to do to her.
+
+"My, my, <<print $player.name>>nya," Naomi says . "Don't think I don't see you checking me out. Could it be you like nyapurr hotties after all nya?"
+
+Uh-oh, she's calling you out. What will you do?
+
+[[Admit it|AdmitPervingOnNaomi]]
+[[I don't know what you're talking about|DenyPervingOnNaomi]]
+
+
+::AdmitPervingOnNaomi
+"Okay," you admit. "I think you're really pretty."
+
+<<if $faceNum <= 2 && $muscleNum >= 2 && $buttNum <= 1 && $breastNum <= 1>>\
+    She smiles. "You knyow, I just happen to find you attractive too nya..." She slides over next to you, biting her lower lip as she rests a hand on your leg. <<if $penisSize >= 3>>Your $player.penis[$penisSize] instantly springs up, pitching a tent in your pants. Naomi looks down and smiles, moving her hand to rest on it. "Looks like I've made someone happy nya~"<<else>>Your $player.penis[$penisSize] instantly springs up, but she doesn't seem to notice.<</if>>
+
+    [[Kiss her|KissNaomi]]
+<<else>>\
+    "Aww," she says, giggling. "That's so sweet! Although, you're a bit too feminine for me. Sorry nya~"
+
+    You feel like you want to cry. It's not your fault this stupid tower is making you look like a girl. Naomi is so sexy too...
+
+    "Aww I'm sorry." Naomi leans over and hugs you, though it's the friendly sort of hug you'd expect from a friend. <<if $naomiFriend != true>>"I knyow we don't talk much, but you seem really cool. We need to hang out sometime."
+
+        [[Yeah... I guess...|NaomiWantsToHangOut][$naomiRomance += 1]]
+    <<else>>\
+    
+    
+        [[End Conversation|$location]]
+    <</if>>\
+<</if>>\
+
+
+::DenyPervingOnNaomi
+"What do you mean? You must be mistaken."
+
+Naomi looks disappointed, but doesn't push the issue.
+
+<<include NaomiConversation>>
+
+
+::KissNaomi
+Naomi seems a bit caught off guard when you kiss her, but it's not long before she's pressing her lips against yours. Her tongue slides into your mouth and her hand slides up to your chest, feeling at your $player.muscle[$muscleNum] chest. Then the crazy girl swings a leg over you, pressing her crotch right against yours. 
+
+"W-wait," you stammer out. Your $player.penis[$penisSize] is pressing against what you suspect is her pussy, separated only by your clothes. "We're in the middle of the cafe. We can't have sex here."
+
+Naomi giggles. "You hyumans have weird customs, don't you?" She grabs hold of your back for support and then presses into you, moaning as she grinds her pussy against your cock. "No-one's embarrassed by sex here. It's as normal as talking or holding hands nya~"
+
+You're not convinced, but oddly no-one seems to be paying much attention. You do get a few glances from customers, but it's mostly from men who look like they wish they were you right now. You also catch a glimpse of Ferris smiling, before going back to work.
+
+"Oh, fuck it," you say as you grab hold of her butt, lifting her up. Naomi kisses you more fiercely as you lay her down on the table and thrust against her, lightly dry humping her. You're not sure how, but Naomi somehow gets both your pants and underwear to fall to the ground, leaving your $player.penis[$penisSize] exposed.
+
+<<if $penisSize < 3>>\
+    Naomi looks surprised. Looking down at your $player.penis[$penisSize], you blush a little in shame.
+
+    "Err it's not that small?" she says, trying to reassure you. Why did she phrase it like a question? "Ugh, please just fuck me."
+<<else>>\
+    "You're so big," she groans. "Hurry up and fuck me."
+<</if>>\
+
+This time when you thrust into her, you're entering her pussy. Naomi wraps her legs around you, pulling you in as your hips slam into her. You reach up, fondling her large boobs, and lightly pinch her nipples. Naomi squeals in delight and you feel her body shudder.
+
+"Did that feel good?" you ask.
+
+Naomi has a stupid, happy grin on her face. "Ooooh..." Her body shudders again. "You have no idea..."
+
+You can feel yourself growing close to orgasm. You try to pull out, but Naomi's legs hold you in place. "Wait, Naomi. I'm going to-" Your cock spasms, threatening to explode at any moment. "Oh god, Naomi. Wait, I'm...!"
+
+Fuck it. Who cares? You're cumming, nothing else matters. You grunt as you shove yourself up against her, holding her in place as you cum inside her pussy. Naomi moans happily as you fill her with cum. Still cumming you grab hold of her hands, trying to press yourself into her even more.
+
+[[Finally, you come to your senses.|KissNaomi2]]
+
+
+::KissNaomi2
+<<set $linkTest = true>>\
+<<for _i = 0; _i < $naomiLinks.length; _i++>>\
+    <<if $naomiLinks[_i] == "[[Ask about how people age in The Tower|NaomiAskAging]]">>\
+        <<set $linkTest = false>>\
+    <</if>>\
+<</for>>\
+<<if $linkTest == true>>\
+    <<set $naomiLinks.push("[[Ask about how people age in The Tower|NaomiAskAging]]")>>\
+    <<set $linkTest = false>>\
+<</if>>\
+"Oh fuck," you mutter quietly. Naomi's just lying there, smiling at you. "Dammit Naomi, why wouldn't you let me pull out?"
+
+"I kind of got caught up in the moment," she says with a laugh. "Sorry about that."
+
+"Sorry? What if you get pregnant!"
+
+She shrugs. "It wouldn't be the first time."
+
+Your mouth drops open. "You have kids?!"
+
+"Ah, yeah," she says. "Two of them, though I don't see them much. They're living somewhere on the second floor."
+
+Two? Just how old is this girl? She doesn't look a day over 18, but now that you think about it, you haven't seen any elderly folks inside The Tower. Could it be people age differently here?
+
+The more you hear about it, the weirder The Tower gets.
+
+<<include NaomiConversation>>
+
+
+::NaomiAskAging
+"You're wondering about aging?" Naomi tilts her head, as if confused by the question. "I mean, it's the same as anywhere else. We're a baby for about a month and by six we're teenagers. Most of us are fully grown in a year."
+
+Your mouth drops open. That's completely different from the human realm!
+
+"Oh, but some of the reeaalllly old residents of The Tower are... different. Those guys have glowing eyes and are able to use magic. That's only the //really// old people, though. I'm talking about a few hundred years."
+
+A few hundred? "Naomi, do people ever die here?"
+
+"Of course," she says. "Ramsdale is pretty safe, but dangerous monsters lurk out in the swamp. Some say the third floor of The Tower is home to legendary creatures too, but no-one's ever gone there and come back."
+
+"I mean by aging," you say with a sigh. "Do people ever die of old age?"
+
+Naomi has that confused look on her face again. "Um, no? Why would they? Is that some kind of disease?"
+
+You can't believe it. The residents of The Tower are immortal. Does this apply to you now too?
+
+<<include NaomiConversation>>
+
+
+::NaomiWantsToHangOut
+<<set $naomiFriend = true>>\
+"I'm so glad you agree!" Naomi lets go of you, smiling. "I mean, who needs sex anyway right? Friends are better!"
+
+Hearing that from Naomi of all people isn't very comforting. You would have preferred to have both, but maybe being friends with her will be fun too. 
+
+<<include NaomiConversation>>
+
+::NaomiAskOpinionOfJob
+"Well the cyustomers are pervs," she says with a shrug. She giggles softly. "Then again, so am I. So I'll admit I love it here. Customers tip really well if you let them feel you up a bit." A lewd smile crosses her face. "Sometimes you even get to do other things nya~"
+
+"Um... and Ferris is okay with this?"
+
+Naomi gives you a confused look. "Why wouldn't she be? If it brings in money, then she encourages it if anything nya~"
+
+<<include NaomiConversation>>

@@ -1,0 +1,144 @@
+::Kou House
+<<set _num = random(2)>>\
+<<if $kouConfrontation != true && $player.race == "nyapurr" && $player.libido >= 80 && $player.sex == "female">>\
+    <<set $kouConfrontation = true>>\
+    As you enter the living room, your eyes settle on Kou standing at the other side of the room. When he see's you his eyes go wide and he covers his nose, looking away from you.
+
+    [[Kou? Are okay?|KouConfrontation2]]
+    <<else>>\
+    <<if _num == 2 && ($time.hours > 16 || $time.hours < 8)>>\
+        [[Kou is here|Kou Talk]]
+    <</if>>\
+
+    It's very clear that someone lives here, as there's an open bag of chips just lying on the couch, unwashed plates sitting on a coffee table, and the rare piece of trash littering the floor. Aside from that, the room is well decorated with pictures, fake plants, and other odds and ends such as a teddy bear. 
+
+    [[Your room|KouHouseYourRoom]]
+
+    [[Exit|Ramsdale]]
+<</if>>\
+
+::Kou Talk
+<<set $location = "Kou House">>\
+Kou flinches a little as you approach. "Do you need something?"
+
+<<include KouConversation>>
+
+
+::KouConfrontation2
+"You can't live here anymore," he growls under his breath. After peeking over to see if you're still there, he clamps his eyes shut. "Leave!"
+
+[[He can't just kick you out! You're going to make him explain himself.|Kou-RefuseToLeave]]
+<<link "This is weird. You're out of here." "Ramsdale">>
+    <<set $ramsdaleHomeLinks.delete("[[Kou's House|Kou House]]")>>
+    <<set $home = $homeless>>
+<</link>>
+
+
+::Kou-RefuseToLeave
+<<hour 1>>\
+When you storm over there and yank his hand away from his face, Kou lets out an audible gasp. "No!" he cries, while at the same time opening his eyes. The moment his gaze rests on you his eyes go vacant, as if his ability to think was gone.
+
+For some reason, you're starting to heat up even more than usual. It's like you're oddly empty. There's just this strange itch between your thighs and you can feel pussy juices running down your leg. Blushing, you shift some weight onto your other hip and press your legs together. It doesn't help.
+
+"Are you um..." You take one look at Kou's face and your pussy throbs, hard, making a moan escape from your lips. "Oh... what... why did I just..." Your pussy throbs again and you moan even louder this time. You start to reach for your crotch, but shake your head, wondering what the hell is wrong with you. Panting heavily, you turn away from Kou, leaning against the couch for support. You subconsciously push your <<print $player.butt[$buttNum]>> butt up into the air, exposing your panties.
+
+Barely a second later Kou has come up behind you and grabbed hold of your hips. You feel his rock hard cock press against your panties and heat radiates through your entire body. You cum on the spot, moaning wildly as Kou presses up against you. The only reason he isn't fucking you right now is because your panties are in the way.
+
+"W-wait," you pant, though it's like you've lost control of your body. You find yourself shoving your ass up against him, your pussy rubbing against his naked cock. When did he take his pants off?!
+
+Kou rips your panties off and throws them aside, shoving you up against the couch as his cock slams into your pussy. Your mind goes blank as you cum again, with Kou quickly filling you. He pulls out just enough so that only the tip of his cock is inside you, before shoving it back in. Each thrust is oddly satisfying and strangely enough, you actually find it easier to think @@#change;with a big, strong man inside of you@@. You shake your head, knowing it's the tower messing with your mind again.
+
+You're held in place when Kou's breathing becomes ragged and his thrusts become more drawn out. Although even if you weren't being held in place, you're so turned on that your body refuses to move anyway. So you're forced to stand there, bent over the couch, while Kou cums inside of you.
+
+[[After a few moments he pulls out of you, still breathing heavily.|Kou-RefuseToLeave2]]
+
+
+::Kou-RefuseToLeave2
+<<hour 2>>\
+<<set $player.pregnant = true>>\
+"You should have leftnya," he says. His breathing is ragged and for a moment you feel him groping your breasts, before he yanks his hand away. "God dammit, <<print $player.name>>. I won't be able to control myself nyow."
+
+Grabbing one of your wrists, Kou forces you to turn around so that you're facing him. You look down at his crotch, finding that his cock is still rock hard and oozing precum. His balls look oddly swollen and uncomfortable, as if his testicles have gone into overdrive producing sperm.
+
+You've barely had a moment to consider this when Kou wraps an arm around you, bringing you in for a kiss. Even though you know you're supposed to be a man the kiss feels strangely good. It feels even better when his hand starts groping your <<print $player.butt[$buttNum]>> ass and his tongue slides into your mouth. You find that heat assaulting you again, making you clench your pussy as it throbs with need. Your hand is already stroking his dick by the time you realize what you're doing and you yelp, releasing it.
+
+"I didn't say stop," Kou growls as he places your hand on his cock again. "Be a good little kitten and rub myai cock. It's going back inside you soon."
+
+Okay, Kou is acting //really// out of character. Then again, you're stroking his cock for some reason and your pussy is throbbing so hard it's like it's vibrating. And as much as you hate to admit it, something about the way he's bossing you around is turning you on. Perhaps it wouldn't be so bad if he shoved you up against the couch again and just took you, @@#change;making you nice and round with a baby@@.
+
+"N-nyo way," you moan, your eyes rolling into the back of your head as you orgasm again. Just how many times are you going to cum? And why do you suddenly have a pregnancy fetish?!
+
+Kou thrusts his cock in your hand a few times and then cum spurts out, coating your fingers. You sigh in relief, but neither you or Kou is satisfied yet. You're so horny it's impossible to think about anything else and when your eyes meet you kiss him, shoving your tongue inside his mouth. 
+
+Kou seems more annoyed by this than turned on, however, and with a sharp glare he smacks you on your <<print $player.butt[$buttNum]>> ass. You yelp and then are lifted off the ground, being placed on the couch. Unable to think of anything but taking his dick you spread your legs, letting your tongue loll out obscenely.
+
+Kou laughs at this and positions himself between your legs. His cock is still leaking pre-cum, but his balls don't look quite as swollen and uncomfortable now. You, on the other hand, are barely able to think. You need a cock inside you right now. 
+
+After taking a moment to grab you by the wrists, [[Kou gives you what you want|Kou-RefuseToLeave3]]
+
+
+::Kou-RefuseToLeave3
+The next two hours are spent getting thoroughly fucked by Kou on the couch. When he's not pinning you against the couch and pounding away at your pussy, he's kissing your neck or groping at your breasts. Sometimes his tongue is in your mouth, his tongue dominating yours while his fingers are interlocked with yours.
+
+By the time he's finally satisfied your pussy has been stuffed so full of cum it's leaking from your vagina, and it's all over your thighs and the couch. You've never felt less like a man in your life.
+
+Looking down at you, Kou scratches the back of his head. "Uh... sorry about that nya. You just smell so good lately and... well... sorry. I got carried away nya..."
+
+You sit up, groaning from the effort. You try to look at Kou, only to find yourself blushing and looking away. You never expected him to be so... dominant, and as much as you hate to admit it, submitting to him felt amazing. Your body has calmed down, however, and you can think a lot more clearly.
+
+[[It's fine. You seemed kind of... pent up.|Kou-RefuseToLeave4]]
+[[Maybe I should leave after all.|Kou-RefuseToLeave5]]
+
+
+
+::Kou-RefuseToLeave4
+<<set $kouRomance = 1>>\
+Kou sighs in relief. "Thank you." He takes a seat next to you on the couch and gently takes your hand, interlocking his fingers with yours. "I didn't expect it to happen so soon, but maybe being a father won't be so bad."
+
+You blink a few times, slowly processing what he just said. A father? Is he saying you're...
+
+"Wait," you say, shifting around on the couch. He squeezes your hand and in spite of yourself, you blush. Why does his big, strong hand feel so good? "Hold on. Are you saying I'm //pregnant//?"
+
+At that, he raises an eyebrow. "You didn't knyow that? When nyapurr go into heat and mate, the girl always gets pregnant. No exceptions."
+
+You feel the color drain from your face. You arrived at this tower a man among men, but with each passing day that manhood seems further out of reach. Now you'll have to deal with pregnancy, of all things.
+
+"I need some time to think..." you mutter quietly.
+
+[[Go up to your room.|KouHouseYourRoom]]
+
+
+
+::Kou-RefuseToLeave5
+<<set $kouRomance = 1>>\
+Just as you're about to walk out the door, Kou grabs hold of your wrist.
+
+"Wait," he says. "Um, well..."
+
+You glare at him. "Well? Spit it out!"
+
+"You do realize you're pregnant, right?"
+
+You just stare at him dumbly. Pregnant? But you're a guy! You //do// have a vagina right now, though, and he //did// cum inside you quite a bit...
+
+"Hold on," you say, holding up your hands. After noticing he's still holding your wrist, you shake him off. "Time out. I can't be //pregnant// of all things."
+
+"Believe it or not, but it's true," Kou says. "We went into heat and mated. The fact we stopped means you're pregnant."
+
+[[Maybe you should stick around. For now.|KouHouseYourRoom]]
+<<link "Doesn't matter. You're leaving." "Ramsdale">>
+    <<set $kouRomance = 0>>
+    <<set $ramsdaleHomeLinks.delete("[[Kou's House|Kou House]]")>>
+    <<set $home = $homeless>>
+<</link>>
+
+
+
+::Kou Relationship
+"You don't like me very much, do you?"
+
+"Nyo, it's not that." Kou sighs. "It's just, I don't really knyow you and now we're living together."
+
+[[Change subject|KouConversation]]
+
+

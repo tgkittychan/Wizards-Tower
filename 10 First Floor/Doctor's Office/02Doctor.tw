@@ -1,0 +1,26 @@
+::Doctor Office Ramsdale
+<<set $location = "Doctor Office Ramsdale">>\
+<<if $metFelicity != true>>\
+    As you step into the clinic, you're greeted by the familiar smell of medicine. The similarities between the Ramsdale clinic and human clinics end there, however. Instead of white, everything is made of a dark wood. There are potted plants, paintings hanging on the walls, and strange machines with glass bulbs. Judging by the swirling energies within, it seems like a safe guess that these machines are magical in nature.
+
+    The Ramadium guy at the desk looks over at you with a bored expression. Yawning, he sets his book aside. "Guessing you're here to see Dr. Nyanyanya?"
+
+    //Nyanyanya? That's an... interesting... name.// "Yes, I am. Is she in?"
+
+    The guy waves his hand dismissively. "Yeah, yeah, go on in."
+
+    [[Enter Dr. Nyanyanya's Office|Meet Felicity]]
+    <<else>>\
+    <<set $location = "Doctor Office Ramsdale">>\
+    The Ramsdale Clinic is a pretty nice place. Everything is made of a polished wood, it is well decorated, and there's even a couch to sit on. There's some magical machinery throughout the place, which you figure is best left alone.
+
+    At the front desk, a Ramadium man ignores you. You can see Felicity working in her office just past the front desk.
+
+    [[Talk to Felicity|Talk To Felicity]]
+    [[Leave|Ramsdale]]
+<</if>>\
+
+
+
+
+

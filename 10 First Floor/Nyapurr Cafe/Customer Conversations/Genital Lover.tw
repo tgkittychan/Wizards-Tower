@@ -1,0 +1,208 @@
+::CafeGenitalLoverMaleYes
+<<set $nyapurrEvent = false>>\
+The man chuckles. "So honest! Although you're really not much of a man, are you?" He leers at your body, sizing up your curves. "Damn. I wouldn't mind making you my woman."
+
+You glare at him. "Sir, may I take your order?"
+
+"How's about an order of that sweet ass?" He slaps his leg as he laughs. "Here's an order for you: let me play with that oversized clit and I'll even throw in a tip."
+
+You roll your eyes, wondering what you did to deserve dealing with morons like this.
+
+[[Fine. I'll let you play with my dick|CafeGenitalLoverMale][$ErenSex = 1]]
+[[I don't think so. Goodbye|$job.name + $shift]]
+
+
+
+::CafeGenitalLoverMaleNo
+<<set $nyapurrEvent = false>>\
+"Really?" he asks, looking you up and down. "You know, it really is hard to believe you're a man. Even without those sexy curves, no self-respecting man would dress like that."
+
+You sigh in relief. The last thing you need is this pervert finding out you're a guy.
+
+Then, he smiles. "I think you're lying." The man sits up straight, clasping his hands and giving you a wicked smile. "Lift up your skirt right now."
+
+[[Lift up your skirt|CafeGenitalLoverLiftSkirt]]
+[[I don't think so. Goodbye|$job.name + $shift]]
+
+
+::CafeGenitalLoverLiftSkirt
+<<if $harrassedWaitress != true>>\
+    <<set $ferrisLinks.push("[[Raise concerns about workplace harrassment|FerrisWorkplaceHarrassment]]")>>\
+    <<set $harrassedWaitress = true>>\
+<</if>>\
+<<if $player.sex == "female">>\
+    "Huh," the man says, scratching the back of his head. "I could have sworn you were a... err, sorry." Scratching the back of his head, he laughs nervously. "Well, this is embarrassing."
+
+    You shrug. "It's fine. Now you know I'm actually a girl." Although, you were never supposed to be.
+
+    Standing up, the man steps behind you, resting a hand on your ass. "You know," he says, groping your ass, "I think this might be even better. Bend over for me, slut."
+
+    Ferris and Naomi are looking at you, ready to jump in if they think the customer is going too far. Although, maybe you should just do what he wants?
+
+    [[Bend over the table|CafeGenitalLoverSubmit][$ErenSex = 1]]
+    [[Call to Ferris|CafeGenitalLoverFerrisHelp]]
+    [[Signal to Naomi|CafeGenitalLoverNaomiHelp]]
+
+<<else>>\
+    "My, my, my," he says, chuckling. "Is that a bulge I see?" He stands up, circling you like a vulture. Stopping behind you, the man gropes your ass as if you're a piece of meat. "Bend over for me, sissy boy. I've got something nice and hard for a slut like you."
+
+    Ferris and Naomi are looking at you, ready to jump in if they think the customer is going too far. Although, maybe you should just do what he wants?
+
+    [[Bend over the table|CafeGenitalLoverSubmit][$ErenSex = 1]]
+    [[Call to Ferris|CafeGenitalLoverFerrisHelp]]
+    [[Signal to Naomi|CafeGenitalLoverNaomiHelp]]
+<</if>>\
+
+::CafeGenitalLoverSubmitFemale
+<<set $nyapurrEvent = false>>\
+<<libido>>
+You bend over the table, submitting to his touch. Now fully convinced you're just his toy to play with, the man fondles your <<print $player.butt[$buttNum]>> ass through your panties. One of his other hands finds its way to your waist, grabbing at the part where your hips push outward.
+
+"You've really got a nice ass," the man says, putting his other hand on your hip as well. He pulls you closer, pressing something big and hard against your butt. You have a pretty good idea of what it is.
+
+<<if $player.libido >= 40>>\
+    The thought of having him inside you makes something click inside your brain and you start to heat up. Suddenly feeling very submissive, you giggle and press your <<print $player.butt[$buttNum]>> butt against his cock.
+
+    <<if $player.libido >= 80>>\
+        As you feel his hard cock pressing against you, obtrusive thoughts start to force their way into your head. Thoughts of him fucking you nice and hard. Thoughts of him cumming inside and getting you pregnant.
+
+        You shake your head, knowing these thoughts aren't normal, that it's the curse of the tower. Yet you just can't get them out of your head. You soon find yourself blushing and submitting to him completely. The small, logical part of you is screaming in the back of your head, but your body knows what it wants even if you don't want to admit it.
+
+    <</if>>\
+<</if>>\
+After pulling down your panties, the customer rubs his cock against your pussy a few times. Then, as if deciding it's ready, he plunges it into you.
+
+You're being pressed against the table, with him thrusting in and out of you. Every time his cock fills you up, his balls slap against you. You moan, <<if $player.libido >= 80>>feeling this weird craving to be filled with his cum<<elseif $player.libido >= 40>>feeling oddly submissive for some reason<<else>>wondering if this is what it was like for all those women you had been with before<</if>>.
+
+Pulling out, the man lifts you just enough to roll you over onto your back. Then he reaches up, grabbing hold of your wrists as he positions himself between your thighs. <<if $player.libido >= 80>>You're not entirely sure when you did it, but you've wrapped your legs around his waist.<</if>>
+
+By the way his thrusts are becoming rougher and more drawn out, it's obvious he's getting close. <<if $player.libido >= 80>>Barely able to control yourself, you wrap your legs around him tighter, pulling him into you.<<elseif $player.libido >= 40>><<else>>Eyes going wide, you wonder if you can get pregnant now.<</if>>
+
+<<if $player.libido >= 80>>The man tries to pull out, but you've got your legs wrapped around him. "Dumb slut wants to get pregnant," he says with a grunt. The words barely register as he thrusts all the way back inside you and holds you in place by the wrists. Warmth floods your womb, making your entire body oddly tingly.<<elseif $player.libido >= 40>>The customer pulls out of you. Pointing his cock toward you, he starts quickly jerking it off. Some of his cum manages to shoot far enough to hit you in the face, but most of it gets on your uniform.<<else>>When the customer pulls out of you, you're met with relief. Pointing his cock toward you, he starts quickly jerking it off. Some of his cum manages to shoot far enough to hit you in the face, but most of it gets on your uniform.<</if>>
+
+"I'll need to ask for you again." The man takes a moment to lightly squeeze your thigh, before pulling his pants back up. "Most of the whores here won't let you have sex with them."
+
+As the man walks out of the restaurant, you feel something wedged inside your panties. Pulling it out, you find $<<print $tip + 50>>. Well, at least this guy pays well.
+
+[[Get back to work|$job.name + $shift][$money += $tip + 50]]
+
+
+
+
+::CafeGenitalLoverSubmit
+<<set $nyapurrEvent = false>>\
+<<booty>>\
+<<libido>>\
+You bend over the table, submitting to his touch. Now fully convinced you're just his toy to play with, the man fondles your <<print $player.butt[$buttNum]>> ass through your panties. One of his other hands finds its way to your waist, grabbing at the part where your hips push outward.
+
+"You've really got a nice ass," the man says, putting his other hand on your hip as well. He pulls you closer, pressing something big and hard against your butt. You have a pretty good idea of what it is. "I'm going to enjoy fucking it."
+
+Your suspicions are confirmed when he presses into you, humping your butt. The man starts grinding his cock against your ass, while all you can do is lean against the table and take it. Oddly, it's not a bad feeling. It almost feels nice to submit to such a big, strong man.
+
+You briefly look up, noticing that Ferris and Naomi have gone back to work. It seems it's too late to change your mind now. 
+
+With a grunt, the man yanks your underwear down and presses his dick between your ass cheeks. Even though you know this shouldn't be happening, your <<print $player.penis[$penisSize]>> has grown rock hard. The man rubs his cock against your smooth butt, using his precum as lubricant.
+
+Suddenly, his cock is inside your ass. You groan a little, struggling a little in his grasp, but the man is strong and holds you in place as his cock fills you. It hurts, but there's something else there too; it's like something //clicked// inside your brain and a part of you accepts you're just a @@#change;submissive little girl@@. 
+
+He pulls out just enough to thrust all the way back in, which has the odd affect of making you giggle. You blink a few times, questioning why you just did that, [[when he thrusts into you again.|CafeGenitalLoverSubmit2]]
+
+
+::CafeGenitalLoverSubmit2
+It's becoming harder to think with each thrust. Before long you find yourself moaning in pleasure, unable to think of anything but the man inside of you.
+
+When the orgasm hits you, it hits your entire body. You convulse on top of the table and push up against him, which only drives him deeper. You can tell you're cumming and probably making a mess on the table, but that's about it. Your mind is a fuzzy haze, filled only with pleasure.
+
+When it finally ends, the man thrusts into you again, but this time, he holds you in place. Your eyes go wide when you realize what's about to happen.
+
+Before you can even think to do something about it, he's cumming. He holds you firmly in place as he fills you with his cum, pressing his cock into you. When he finally pulls out of you, you can already feel his cum leaking out.
+
+As you're pulling your panties back up, the man slaps you on the ass. "You're a quality little slut. I hope you enjoy the tip - I'm sure you'll see me again."
+
+As the man walks out of the restaurant, you feel something wedged inside your panties. Pulling it out, you find $<<print $tip + 50>>. Well, at least this guy pays well.
+
+[[Get back to work|$job.name + $shift][$money += $tip + 50]]
+
+
+
+::CafeGenitalLoverFerrisHelp
+<<set $nyapurrEvent = false>>\
+<<set $bannedCustomer = true>>\
+Okay, this guy is definitely going too far. You wave Ferris over.
+
+Ferris walks over to the table wearing a very forced smile. "Is there a problem?"
+
+"I think that's none of your business," the customer says. "The lady and I are just having a little fun."
+
+"She doesn't look like she's having fun to me."
+
+The customer glares at her. "What are you, her knight? Scram."
+
+You see Ferris's eye twitch, and you know she's starting to lose patience. "Sir," she says, giving him an icy look. "First of all, the waitresses are not your toys to play with. You will treat them with respect. Second of all, I am her boss. I own this place."
+
+The customer opens his mouth, but doesn't say anything. He looks from you to Ferris, his mouth moving, but no words coming out. When he meets Ferris's icy glare, he withers ever so slightly.
+
+"I, er, um, I..." The customer has finally managed to speak. "Um, this is just a misunderstanding." As if only now noticing his hand is still on your ass, he yelps and removes it. "I swear. I was just about to order."
+
+The smile she gives him is as unexpected as it is terrifying. "Sir, get the fuck out of my restaurant. And I'd better never see you again."
+
+Once the man is gone, you sigh in relief.
+
+[[Get back to work|$job.name + $shift]]
+
+
+::CafeGenitalLoverNaomiHelp
+<<set $nyapurrEvent = false>>\
+Meeting Naomi's gaze, you all but plead for help. Sensing that you're in danger, she stops what she's doing and trots over to the table.
+
+"<<print $player.name>>," she says with a bow. "Sorry to intrudenya, but the boss needs you in the back."
+
+The customer groans. "Can't you see she's busy? I'm a loyal customer."
+
+"I'm afraid it can't wait," Naomi says. Grabbing hold of your hand, she pulls you away and nudges you towards the kitchen. "But rest assured, dear customernya, that I will take care of all your needs." Smiling, she sits at the edge of the table and lifts her skirt ever so slightly. "All of them."
+
+The customer grits his teeth, but doesn't say anything. It's clear he's disappointed, but as he looks Naomi over, a thoughtful look crosses his face. You catch a glimpse of him moving over to her side as you start to walk away.
+
+You owe Naomi for this one. Although, judging by the moaning behind you, you suspect she doesn't mind.
+
+[[Get back to work|$job.name + $shift]]
+
+
+::CafeGenitalLoverMale
+<<set $nyapurrEvent = false>>\
+<<if $player.sex == "female">>\
+    The customer pulls you onto his lap, pressing his cock against your ass. Yet as soon as he reaches into your panties, he frowns. You feel him poke and prod, until one of his fingers slides into your vagina.
+
+    "Is this some kind of joke?" he asks quietly. "Because I don't like being made a fool of."
+
+    The customer pushes you off his lap. When you turn to look at him, you find him glaring at you.
+
+    "Please get me a different waitress," he says sourly. "I don't want to look at you right now."
+
+    [[Go back to work|$job.name + $shift]]
+<<else>>\
+    <<penis>>\
+    At the customer's instruction, you take a seat on his lap. He reaches up under your skirt, gently gripping your $player.penis[$penisSize]. You squirm a little, but remain seated.
+
+    "Someone's excited," he says. When he breathes into your ear and starts rubbing your $player.penis[$penisSize], your toes curl. "I'm going to enjoy making a cute girl like you cum."
+
+    "I-I'm not a gir-" His other hand finds one of your nipples and he lightly pinches it, making you moan.
+
+    "You're a girl," he says. You glare at him over your shoulder, which makes him laugh. "I don't care how big your clit is. All I see is a cute girl pouting at me."
+
+    "I'm not pouting!"
+
+    The guy laughs again and goes right back to what he was doing. As much as you want to punch him, you did agree to this. So you sit there and take it, letting him have his fun.
+
+    At some point the man grabs you by the legs and pulls you up onto his crotch, pressing his cock against your ass. Your eyes go wide when he starts humping you, grinding his rock hard cock against your $panties.
+
+    Eventually the man grips your legs and after a final thrust, he sighs in relief. You can tell by the wet, sticky spot in his pants that he just came from humping your ass, which makes you blush red. 
+
+    One of his hands moves straight to your $player.penis[$penisSize], while the other starts playing with your breasts. His hands move slow, yet with precision, seeming to hit all your weak spots. Even though you're a man and you know you're not supposed to enjoy this, your panting turns into moaning. 
+
+    It doesn't take you long to cum. You go rigid as the man cups your balls, stroking your $player.penis[$penisSize] that is spurting cum. With his other hand he pinches your nipple, urging you on.
+
+    When you're done, the man lets you go. "Good girl," he says with a laugh. For some reason, you can't even bring yourself to argue with him. "I hope you enjoy the tip. I'm sure you'll see me again."
+
+    [[Grab your tip and leave|$job.name + $shift][$money += $tip + 20]]
+<</if>>\

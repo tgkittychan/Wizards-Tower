@@ -1,0 +1,8 @@
+::StoryMenu
+<<if $gameStarted>>\
+    [[Appearance|Menu Appearance]]
+    <!-- [[Stats|Menu Stats]] -->
+    [[Outfit]]
+    [[Reports]]
+    [[Extra|Menu Extra]]
+<</if>>\

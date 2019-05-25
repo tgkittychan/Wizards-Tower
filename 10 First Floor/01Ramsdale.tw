@@ -1,0 +1,49 @@
+::Ramsdale
+Ramsdale is a decent sized town sitting atop a stone foundation. Though the surrounding area is swamp, the town remains relatively dry.
+
+<<if $home.location != "">>\
+    [[Go Home|$home.location]]
+<<else>>\
+    You don't currently have a home.
+<</if>>\
+
+[[Businesses|RamsdaleBusinesses]]
+[[Houses|RamsdaleHouses]]
+[[Other Locations|RamsdaleOther]]
+
+<<link "Explore" "Explore Ramsdale">>
+    <<hour 1>>
+<</link>>
+
+
+::RamsdaleHouses
+<<set $ramsdaleHomeLinks = $ramsdaleHomeLinks.sort()>>\
+Which house do you visit?
+
+<<for _i = 0; _i < $ramsdaleHomeLinks.length; _i++>>
+    $ramsdaleHomeLinks[_i]
+<</for>>
+
+[[Return|Ramsdale]]
+
+
+::RamsdaleBusinesses
+<<set $ramsdaleBusinessLinks = $ramsdaleBusinessLinks.sort()>>\
+Which business do you visit?
+
+<<for _i = 0; _i < $ramsdaleBusinessLinks.length; _i++>>
+    $ramsdaleBusinessLinks[_i]
+<</for>>
+
+[[Return|Ramsdale]]
+
+
+::RamsdaleOther
+<<set $ramsdaleOtherLinks = $ramsdaleOtherLinks.sort()>>\
+Where do you go?
+
+<<for _i = 0; _i < $ramsdaleOtherLinks.length; _i++>>
+    $ramsdaleOtherLinks[_i]
+<</for>>
+
+[[Return|Ramsdale]]

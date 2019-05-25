@@ -1,0 +1,35 @@
+:: PassageHeader
+<<set $num = $time.dayNum>>\
+/*  Time  */\
+<<set $time = changeTime($time)>>\
+<<set $time.timeNum = getTimeOfDay($time.hours)>>\
+<<set $displayClock = clockDisplay($time.hours, $time.minutes)>>\
+<<if $num < $time.dayNum>>\
+    <<set $takenPill = false>>\
+<</if>>\
+<<if $takenPill == false && $daysLeftToLive > 0>>\
+    <<if $pills <= 0>>\
+            <<set $daysLeftToLive -= 1>>\
+            @@#warning;Stone Heart has progressed a little further.@@
+
+    <<else>>\
+        <<set $pills -= 1>>\
+        @@#good;You take a pill.@@
+
+    <</if>>\
+    <<set $takenPill = true>>\
+<</if>>\
+<<if $daysLeftToLive == 0>>\
+    <<if $location != "StoneheartDeath">>\
+        <<goto [[StoneheartDeath]]>>\
+    <</if>>\
+<</if>>\
+<<if $player.hunger <= -100>>\
+    <<if $location != "HungerDeath">>\
+        <<goto "HungerDeath">>\
+    <</if>>\
+<</if>>\
+<<if $player.hunger < 0>>\
+    @@#warning;Your stomach is growling and your hands are shaking. @@
+
+<</if>>\

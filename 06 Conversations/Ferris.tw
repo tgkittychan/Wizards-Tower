@@ -1,0 +1,83 @@
+::TalkFerris
+"Welcome, $player.name. What can I help you with?"
+
+<<include "FerrisConversation">>
+
+
+::FerrisAskJob
+"Well, you're a <<print $job.name>>nya. You make $<<print $job.wages>> an hour. Do the math yourself; I'm not a calculator."
+
+<<if $job.title == "Nyapurr Waitress">>\
+    Felicity nudges you, smiling lewdly. "Have I mentioned how adorable you look in a skirt nya? Feel free to sex up any customers; it's good for business nya~"
+
+<</if>>\
+<<include FerrisConversation>>\
+
+
+::FerrisWorkplaceHarrassment
+"Ferris, some of the customers are a bit too handsy," you say. Ferris stares at you blankly, waiting for you to say more. "They keep groping me and making gross comments... it's highly inappropriate."
+
+One of Ferris's ears go flat, while the other stands straight. She has a look of intense concentration on her face. "$player.name... you do realize that's kind of the culture of our cafe, right?"
+
+"What do you mean?"
+
+"Our customers knyow they can get handsy with the waitresses. That's why they come and eat our, admittedly overpriced, food." Ferris shrugs, giving you an apologetic look. "The same is true for waiters nya, but we just don't get many lady customers."
+
+You're left speechless. Ferris //knows// this is happening? Is she serious? "But... but what about the other waitresses?"
+
+"You're the only one complaining." Ferris crosses her arms, giving you an annoyed look. "I think you'll find the other waitresses see it as an opportunity to earn money nya. If you don't like it then feel free to quit, but I don't think you'll find another position that pays this well."
+
+<<include FerrisConversation>>\
+
+
+::QuitNyapurrCafe
+<<set $job = $unemployed>>\
+<<updateNyaJob>>\
+"Suit yourself," Ferris says. "I hope you consider coming back some day."
+
+<<include FerrisConversation>>\
+
+
+::WorkAtNyapurrCafe
+<<set $dayoff = true>>\
+<<if $faceNum >= 3 && $bodyHairNum == 0 && $muscleNum <= 1>>\
+    Ferris looks you up and down, smiling. "I'd be willing to hire you as a waitress. You'd be making $<<print $nyaWaitress.wages>> an hour, along with any tips."
+
+    <<if $player.sex == "male">>\
+        [[I'm a guy...|WaitressOfferImAGuy]]
+    <</if>>\
+    [[Take the Job|WorkAtNyapurrCafe2]]
+    [[Decline|Nyapurr Cafe]]
+<<else>>\
+    She sighs. "I suppose I'm willing to hire you as a waiter. The pay is $<<print $nyaWaiter.wages>> an hour."
+
+    [[Take the Job|WorkAtNyapurrCafe1]]
+    [[Decline|Nyapurr Cafe]]
+<</if>>\
+
+
+::WaitressOfferImAGuy
+"Doesn't matter," she says. "Cute boys are girls too."
+
+You glare at her. "That is absolutely not true!"
+
+Ferris giggles. "Sorry, but I won't let you work here as anything but a waitress."
+
+[[Take the Job|WorkAtNyapurrCafe2]]
+[[Decline|Nyapurr Cafe]]
+
+
+::WorkAtNyapurrCafe1
+<<set $job = $nyaWaiter>>\
+<<updateNyaJob>>\
+"It's good to have you on board." Ferris grasps your hand, shaking it. "Bring in some cute girls, okay?"
+
+[[End conversation|Nyapurr Cafe]]
+
+
+::WorkAtNyapurrCafe2
+<<set $job = $nyaWaitress>>\
+<<updateNyaJob>>\
+"Great!" she says happily. She grasps your hand, shaking it. "You're so cute I just knyow you'll bring in lots of money- I mean customers"
+
+[[End conversation|Nyapurr Cafe]]

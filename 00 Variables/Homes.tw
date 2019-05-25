@@ -1,0 +1,34 @@
+
+::Homes
+/*  Homes in Ramsdale   */
+<<set $homeless = {
+    name: "Homeless",
+    location: "",
+    rent: 0,
+    eat: 0,
+    sleep: 0
+}>>
+
+<<set $kouHouse = {
+    name: "Kou House",
+    location: "KouHouseYourRoom",
+    rent: 30,
+    eat: 50,
+    sleep: 8
+}>>
+
+<<set $cardboardBox = {
+    name: "Homeless",
+    location: "Ramsdale Alley",
+    rent: 0,
+    eat: 0,
+    sleep: 4
+}>>
+
+<<set $ramsdaleInn = {
+    name: "Ramsdale Inn",
+    location: "RamsdaleInnRentRoom",
+    rent: 80,
+    eat: 60,
+    sleep: 12
+}>>

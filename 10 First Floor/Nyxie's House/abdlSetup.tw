@@ -1,0 +1,54 @@
+::NyxieSetup
+/* Adult Baby mechanics
+    *Every hour, $pee increases by 35
+    *Every hour, $poop increases by 13
+
+    *$babyPoints indicate how much you've given in to your role as a baby. The Tower's magic is at work here and 
+    0 - You're not a baby!
+    1 - You're an adult, but you feel a bit more comfortable in diapers.
+    2 - You have to admit that diapers are kind of convenient. 
+    3 - 
+    9 - You now speak in babbles. If you're hungry or need a diaper change, you have to throw a fit to get your mommy's attention.
+    10 - You're such a big baby that messing your nappies makes you cum. 
+
+    Incontinence:
+    0 - You have full control
+    1 - You've started wetting the bed.
+    2 - It's harder to keep from messing yourself.
+    3 - 
+    4 - You're still aware of when you need to go, but you're unable to hold it. 
+    5 - You're fully incontinent. You don't even notice when you need to go anymore; it just happens.
+*/\
+<<set $job = $baby>>\
+<<set $outfit = $baby.outfit>>\
+<<set $pee = 0>>\
+<<set $poop = 0>>\
+<<set $incontinence = 0>>\
+<<set $babyPoints = 0>>\
+<<set $babySubmission = 0>>\
+You groan, turning over in your bed. You hear a strange crinkling as you move, but you pay no attention to it. There's a dull, aching throb in your head, as if you have a really bad hangover. What, exactly, were you doing last night? 
+
+You lay there a few more minutes before your eyes shoot open. There are long, plastic white bars right in front of you, as if you're in some kind of strange jail cell. A woman sits in a chair on the other side, smiling at you.
+
+"Did the baby have a nice nap?" she asks. 
+
+You can't help but notice she dresses entirely in red, from her red dress down to her painted red nails. Perhaps what's strangest of all, however, is her glowing yellow eyes. You're reminded of those red high heels you saw just before blacking out.
+
+"Who the hell are you?" you ask, sitting up. Again there's a strange crinkling when you move, and you look down to see what you're wearing. Your eyes go wide in shame.
+
+<<print $outfit.description>>
+
+"What the fuck is this?!" you scream, standing abrubtly. As you look around your jail cell, you notice that it's not a cell at all but a massive, oversized crib. Even while standing the bars loom high over your head, high enough that even if you were to jump, you wouldn't be able to grab hold of the top. Even higher than that a pink baby mobile with childish animals hangs from the ceiling, spinning slowly.
+
+With its white sheets, pink polka dots, and stuffed animals, you can't think of a more childish crib. Even beyond the crib, though, everything is extremely childish and girly. If it's not white with pink polka dots, then it's cute stuffed animals. In a corner of the room next to a window, you even see what looks like an oversized baby bouncer.
+
+The woman glares at you. "Young lady, that's not how a baby should speak. This is a first offense, though, so if you say, "I'm sowwi, mommy" I'll forgive you."
+
+[[Fuck you|NyxieSetup-FuckYou]]
+[[Say it|NyxieSetup-SayIt]]
+
+
+::NyxieSetup-FuckYou
+
+
+::NyxieSetup-SayIt

@@ -1,0 +1,224 @@
+::Nyapurr Shifts [widget]
+
+
+
+<<widget nyaWaitress>>\
+    <<set _num = random(3)>>\
+    <<set $nyaPoints += 3>>\
+    <<if _num == 0>>\
+        You catch a few customers checking you out, but somehow you make it through this part of your shift without being harassed. 
+    <<elseif _num == 1>>\
+        <<if $harrassedWaitress != true>>\
+            <<set $ferrisLinks.push("[[Raise concerns about workplace harrassment|FerrisWorkplaceHarrassment]]")>>\
+            <<set $harrassedWaitress = true>>\
+        <</if>>\
+        <<set $nyapurrEvent = true>>\
+        While bringing food to a table, <<if $nyapurr >= 40>>a customer grabs your tail<<else>>a customer grabs the back of your skirt, lifting it<</if>>. You yelp, stumbling a little, but somehow manage to set the food down before you can drop it. The customer's hand moves up to the back of your skirt, squeezing your <<print $player.butt[$buttNum]>> butt.
+
+        "You're a sexy little thing," the customer says.
+
+        <<if $player.sex == "male">>\
+            <<link "I'm a guy" NyaButtGropeImAGuy>>
+                <<set $nyapurrEvent = false>>
+                <<if $shift == 1>>
+                    <<hour 4>>
+                <</if>>
+            <</link>>
+        <</if>>\
+        <<link "Submit to his touch" NyaButtGropeSubmit>>
+            <<set $nyapurrEvent = false>>
+            <<if $shift == 1>>
+                <<hour 4>>
+            <</if>>
+        <</link>>
+        <<link "Scowl and walk away" _shiftName>>
+            <<set $nyapurrEvent = false>>
+            <<if $shift == 1>>
+                <<hour 4>>
+            <</if>>
+        <</link>>
+    <<elseif _num == 2>>\
+        <<set $nyapurrEvent = true>>\
+        You bring food to a table, setting the tray down gently. Two men sit at the table, staring at you intently.
+
+        One of the men looks right at your <<print $player.breasts[$breastNum]>>-cup breasts, saying, "You know, I have magic hands. Let me fondle your boobs and they'll grow a bit."
+
+        "You idiot," his friend says, bonking him on the head. "How many times do I have to tell you no-one believes that bullshit pickup line? If you want to touch her boobs, then ask like a normal person!"
+
+        You don't think there is a way to ask that like a normal person, but you have to admit it's a pretty dumb pickup line. Besides, making them grow is the //last// thing you want. 
+
+        The 'magic hands' guy sighs, hanging his head in defeat. "Very well. Young lady, may I fondle your boobs? I'll give you $20."
+
+        <<link "Well, money is money" MagicHandsSubmit>>
+            <<set $nyapurrEvent = false>>
+            <<if $shift == 1>>
+                <<hour 4>>
+            <</if>>
+        <</link>>
+        <<link "Hell no" _shiftName>>
+            <<set $nyapurrEvent = false>>
+            <<if $shift == 1>>
+                <<hour 4>>
+            <</if>>
+        <</link>>\
+    <<elseif _num == 3 && $bannedCustomer != true>>\
+        <<set $nyapurrEvent = true>>\
+        <<if $ErenSex == 1>>\
+            <<set $ErenSex = 2>>\
+            As you bring food to a table, you notice that this customer looks familiar. You set the food down, stopping to think about where you've met this man before. Then it hits you.
+
+            This is one of the perverts you had sex with.
+
+            "So we meet again," the customer says. Standing up, he smiles and moves to stand next to you. "I never properly introduced myself, did I?"
+
+            As you feel his hand groping your ass, you wonder if this is really his idea of a proper introduction. Yet you find yourself blushing, unable to tell him off. Why can't you bring yourself to tell this guy to fuck off?
+
+            "My name is Eren," he says, using his other hand to grope one of your breasts. "And I like you. C'mon, let's have some more fun. I'll let you decide how."
+
+            <<link "Lift your skirt, exposing your crotch" CafeGenitalLoverMale>>
+                <<set $nyapurrEvent = false>>
+                <<if $shift == 1>>
+                    <<hour 4>>
+                <</if>>
+            <</link>>
+            <<link "Present your ass" CafeGenitalLoverSubmit>>
+                <<set $nyapurrEvent = false>>
+                <<if $shift == 1>>
+                    <<hour 4>>
+                <</if>>
+            <</link>>
+            <<link "I, um... I have to go!" _shiftName>>
+                <<set $nyapurrEvent = false>>
+                <<if $shift == 1>>
+                    <<hour 4>>
+                <</if>>
+            <</link>>
+        <<elseif $ErenSex == 2>>\
+            While stopping at a table to take someone's order, you notice your customer is Eren. Judging by the smug grin plastered across his face, you can already guess he's about to say something perverted.
+
+            "Yes, miss, I'm ready to order," he says.
+
+            "What can I get for you, sir?"
+
+            "I'd like an order of that sweet ass."
+
+            You sigh. That's about what you expected him to say. Now the question is: do you give him what he wants?
+
+            <<if $player.sex == "female">>\
+                <<link "Offer him sex" CafeGenitalLoverSubmitFemale>>
+                    <<set $nyapurrEvent = false>>
+                    <<if $shift == 1>>
+                        <<hour 4>>
+                    <</if>>
+                <</link>>
+            <<else>>\
+                <<link "Lift your skirt, exposing your crotch" CafeGenitalLoverMale>>
+                    <<set $nyapurrEvent = false>>
+                    <<if $shift == 1>>
+                        <<hour 4>>
+                    <</if>>
+                <</link>>
+                <<link "Present your ass" CafeGenitalLoverSubmit>>
+                    <<set $nyapurrEvent = false>>
+                    <<if $shift == 1>>
+                        <<hour 4>>
+                    <</if>>
+                <</link>>
+            <</if>>\
+            <<link "Actually, I think I hear my boss calling for me." _shiftName>>
+                <<set $nyapurrEvent = false>>
+                <<if $shift == 1>>
+                    <<hour 4>>
+                <</if>>
+            <</link>>
+        <<else>>\
+            While bringing food to a table, you notice a customer giving you a strange look. He stares openly at your crotch, tilting his head.
+
+            "Um, sir?" you ask. "May I take your order?"
+
+            "Hey," he says, finally looking up at you. "I've heard you're a boy. Is it true?"
+
+            <<link "Of course I am!" CafeGenitalLoverMaleYes>>
+                <<set $nyapurrEvent = false>>
+                <<if $shift == 1>>
+                    <<hour 4>>
+                <</if>>
+            <</link>>
+            <<link "No. You must have misheard." CafeGenitalLoverMaleNo>>
+                <<set $nyapurrEvent = false>>
+                <<if $shift == 1>>
+                    <<hour 4>>
+                <</if>>
+            <</link>>
+        <</if>>\
+    <<else>>\
+        You catch a few customers checking you out, but somehow you make it through this part of your shift without being harassed. 
+    <</if>>\
+<</widget>>\
+
+
+<<widget nyaWaiter>>\
+    <<if $faceNum >= 3 && $bodyHairNum <= 0 && $muscleNum <= 1>>\
+        <<set $nyapurrEvent = true>>\
+        Before you can hope to start your shift, Ferris steps in front of you, blocking your path. You can't help but notice that she's taller than you now. 
+
+        "Follow me, <<print $player.name>>nya. We nyeed to talk."
+
+        [[Follow Ferris|WaitressPromotion]]
+    <<else>>\
+        <<set _num = random(3)>>\
+        <<set $nyaPoints += 3>>\
+        <<if _num == 0>>\
+            Nothing unusual happens during your shift. You do get some ramadium girls flirting with you, but the citizens of Ramsdale are a very sexually open people. If anything, it's odd no-one has been more forward in their advances.
+        <</if>>\
+        <<if _num == 1>>\
+            During your shift, you catch a ramadium girl admiring your ass. She makes no effort to hide what she's doing and when your eyes meet, she winks at you. The girl stands playfully, turning in place so that her backside is facing you.
+
+            You try not to get distracted, but still find your eyes drawn to her butt before walking away.
+
+            <<booty>>\
+        <</if>>\
+        <<if _num == 2>>\
+            While setting down food at a table, a lady sneers at you. 
+            
+            "Hmph," she says, looking at you the same way you'd probably look at bird poop on your boots. "I hear nyapurr men have tiny cocks. I don't get what all the appeal is about."
+
+            Her husband's mouth drops open. "Margo! Why do you always have to do this?"
+
+            The couple starts bickering as you walk away, <<if $penisSize == 4>>smiling as you think about<<else>>feeling insecure about<</if>> your <<print $player.penis[$penisSize]>>.
+
+            <<penis>>\
+        <</if>>\
+        <<if _num == 3>>\
+            While taking a girl's order, you can't help but notice the way her breasts squish together. The girl leans forward, pressing her arms together even more. Her chest is a valley of cleavage now.
+
+            "Hello? Are you listening to me?"
+
+            "Sorry," you say, shaking your head. "What can I get for you?"
+
+            The girl smiles and then tells you her order.
+
+            <<boobs>>\
+        <</if>>\
+        <<if _num == 4>>\
+            
+        <</if>>\
+    <</if>>\
+<</widget>>\
+
+
+<<widget updateNyaJob>>\
+    <<if $job.name == "Unemployed">>\
+        <<for _i = 0; _i < $ferrisLinks.length; _i++>>\
+            <<if $ferrisLinks[_i] == "[[Quit job|QuitNyapurrCafe]]">>\
+                <<set $ferrisLinks.splice(_i, 1, "[[Ask for a job|WorkAtNyapurrCafe]]")>>\
+            <</if>>\
+        <</for>>\
+    <<else>>\
+        <<for _i = 0; _i < $ferrisLinks.length; _i++>>\
+            <<if $ferrisLinks[_i] == "[[Ask for a job|WorkAtNyapurrCafe]]">>\
+                <<set $ferrisLinks.splice(_i, 1, "[[Quit job|QuitNyapurrCafe]]")>>\
+            <</if>>\
+        <</for>>\
+    <</if>>\
+<</widget>>\

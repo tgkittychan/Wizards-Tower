@@ -1,0 +1,48 @@
+::Nyapurr Cafe
+<<set $location = "Nyapurr Cafe">>\
+<<if $time.hours > 22 || $time.hours == 22 || $time.hours < 6>>\
+    The Nyapurr Cafe is currently closed. We're open from 6 to 22 nya~
+
+    [[Exit|Ramsdale]]
+<<else>>\
+    <<if $nyapurrJobOffer && $metFerris != true>>\
+        <<include "NyapurrJobOfferStart">>
+    <<else>>\
+        The Nyapurr Cafe is getting a decent amount of business, mostly from men. Waitresses move in and out of the kitchen, doing their best to get every customer's order. Every now and then a customer feels up one of the waitresses; the weird part is that no-one bats an eye, as if this behavior is normal.
+
+        [[Order Food|NyapurrCafeOrderFood]]
+
+        <<if $declinedWaitress>>\
+            [[Ferris is in her office.|FiredFromCafe]]
+        <<else>>\
+            [[Ferris is in her office.|TalkFerris]]
+        <</if>>\
+        <<if $job.name == '"Nyapurr" Waiter' || $job.name == "Nyapurr Waitress" && $dayoff != true>>\
+            <<gotoJob>>\
+        <</if>>\
+        [[Exit|Ramsdale]]
+    <</if>>\
+<</if>>\
+
+
+::NyapurrCafeOrderFood
+<<link "Tempura - $30" "NyapurrCafeOrderFood">>
+    <<if $money <= 0>>
+    <<script>>UI.alert("You don't have enough money nya!");<</script>>
+    <<else>>
+        <<set $money -= 30>>
+        <<set $player.hunger += 50>>
+        <<hour 1>>
+    <</if>>
+<</link>>
+<<link "Octopus Sushi - $40" "NyapurrCafeOrderFood">>
+    <<if $money <= 0>>
+        <<script>>UI.alert("You don't have enough money nya!");<</script>>
+    <<else>>
+        <<set $money -= 40>>
+        <<set $player.hunger += 60>>
+        <<hour 1>>
+    <</if>>
+<</link>>
+
+[[Done ordering|$location]]

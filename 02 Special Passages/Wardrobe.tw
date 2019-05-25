@@ -1,0 +1,21 @@
+::Wardrobe
+<<set $wardrobe.sort(sortObjects($wardrobe))>>\
+There's a small sign inside the wardrobe:
+
+"The wardrobe is not yet functional. I'm still trying to figure out how to do some things. [[Click here for a list.|WardrobeToDo]]"
+
+[[Close Wardrobe|$home.location]]
+
+
+
+::WardrobeToDo
+In order to get the wardrobe working, I need to figure out how to make an inventory system of objects, or "outfits". This isn't something I know how to do, but luckily I don't //need// the wardrobe system ready to proceed with the game. That's why this is kind of on the back burner right now.
+
+Here are the things the wardrobe needs to be able to do before I can call it ready. Crossed out means I know how to do it. Star means I //think// I know how to do it, but haven't tested it yet.
+* ==Sort outfits by name==
+* ==Add outfits to the wardrobe==
+* *Remove specific outfits from the wardrobe 
+* *Equipping outfits in the wardrobe
+* Selling owned outfits - outfit shop will be added at some point
+* Setting it so you can't sell your work uniform
+<<back>>

@@ -1,0 +1,62 @@
+::Menu Extra[menu]
+[[How to play|PlayGuide]]
+[[Player Stats|PlayerStatsGuide]]
+[[View Changelog|ChangeLog]]
+
+<<back [[Return|$return]]>>
+
+
+::PlayerStatsGuide
+Right now the stats chosen on startup don't do much, but they'll eventually play a larger role in the game. 
+
+<h3>Strength</h3>
+Strength is how strong you are. In combat you generally want to kill the opponent as fast as possible, so strength is an important stat.
+
+Unfortunately this stat will lower a bit as your character is feminized. 
+
+
+<h3>Defense</h3>
+Defense isn't just your ability to take a hit. It's how skilled you are at blocking and how many openings you leave in general. Sometimes a single hit is all it takes to die, so a good defense is important. 
+
+
+<h3>Vitality</h3>
+Vitality determines your health. Although defense is arguably stronger when it comes to combat, vitality is stronger when it comes to surviving other dangers like wounds and poison. 
+
+
+<h3>Dexterity</h3>
+
+
+
+<h3>Survival</h3>
+Over the years you have no doubt gained some survival skills. This can include anything from recognizing edible plants to knowing how to treat a wound.
+
+
+
+::PlayGuide[menu]
+<<back>>
+
+There are three stats you need to keep track of while playing. For the most part, your character will take care of these automatically. You just have to make sure certain conditions are met.
+
+<h3>Hunger</h3>
+For now, the only downside to not eating is that you die if your hunger reaches -100. However, I have it planned for hunger to affect other things in future updates.
+
+If your home has food, then your character will automatically eat breakfast when they wake up. Your character also eats during lunch while working. It's worth noting that hunger //does decrease// while you're sleeping, so you should keep that in mind when sleeping in a place without food.
+
+<h3>Energy</h3>
+Energy is basically how much - and what quality of - sleep you're getting. If your energy is in the negatives, then you won't be able to do certain tasks such as working.
+
+Energy increases when you sleep. Different beds give different amounts of energy, with higher quality beds giving more. Anywhere you sleep is a completely viable way to get it back up, though. 
+
+Unlike hunger, energy does not decrease while you're sleeping.
+
+<h3>Days Left</h3>
+Your character is afflicted with a deadly disease known as Stone Heart. Days left refers to how many days you have left to live.
+
+Luckily for you, you happen to have found the only place in the world able to treat it. The cure itself is too expensive for you in the beginning, but you can buy pills that keep your days left from decreasing. If you have the money for it, then feel stock up on as many pills as you want.
+
+<h3>Time</h3>
+In addition to the three stats, you also need to keep time in mind. If you have a job, then you work from 8 to 16. Certain actions - such as getting a report from Felicity or exploring Ramsdale - also make time pass. 
+
+
+
+<<back>>

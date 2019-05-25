@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+
+::Time Widgets [widget]
+<<widget hour>>\
+    <<silently>>\
+        <<set $player.hunger -= $args[0] * 2>>
+        <<if _sleeping>>
+            <<set $player.sleep += $args[0] * $home.sleep>>\
+        <<else>>
+            <<set $player.sleep -= $args[0] * 4>>
+        <</if>>
+        <<set $time.hours += $args[0]>>
+    <</silently>>\
+<</widget>>\

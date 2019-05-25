@@ -1,0 +1,27 @@
+::*Start
+<<set $gameStarted = true>>\
+Time test 1
+
+
+<<link "Time test" "Test1">>
+    <<hour 1>>
+<</link>>
+[[First Test|Test1][$hour += 1]]
+[[Second test|Test2][$job = $nyaWaitress, $outfit = $nyaWaitress.outfit]]
+[[Third test|Test3]]
+
+
+::Test1
+
+
+
+::Test2
+You're a $job.name, making $job.wages an hour. 
+
+Your outfit: 
+
+$outfit.description
+
+
+::Test3
+

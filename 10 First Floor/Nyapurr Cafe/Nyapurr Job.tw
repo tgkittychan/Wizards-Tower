@@ -1,0 +1,99 @@
+
+
+::Nyapurr Waitress
+<<set $shift = 1>>\
+<<set _shiftName = $job.name + $shift>>\
+<<nyaWaitress>>\
+<<if $nyapurrEvent != true>>\
+    <<link "Get lunch" _shiftName>>
+        <<hour 4>>
+    <</link>>
+<</if>>\
+
+
+::Nyapurr Waitress1
+<<set $shift = 2>>\
+<<set _shiftName = $job.name + $shift>>\
+<<set $location = "Nyapurr Waitress1">>\
+<<set $player.hunger += 50>>\
+It's lunch time.
+
+The Nyapurr Cafe provides free food for all its staff, so you get yourself something called "tempura." As far as you know the human realm didn't have anything like this, but it seems to be fish. Most of the menu is fish, actually.
+
+You can spend your lunch talking to someone if you wish.
+
+[[Talk to Naomi|TalkNaomi]]
+
+<<link "Return to work" _shiftName>>
+    <<hour 4>>
+<</link>>
+
+
+::Nyapurr Waitress2
+<<set $shift = 3>>\
+<<set _shiftName = $job.name + $shift>>\
+<<nyaWaitress>>\
+
+<<if $nyapurrEvent != true>>\
+    <<link "End Shift" _shiftName>>
+    <</link>>
+<</if>>\
+
+
+::Nyapurr Waitress3
+Your shift has ended.
+
+[[Stay in cafe|Nyapurr Cafe][$money += $job.wages * 8]]
+[[Go home|$home.location][$money += $job.wages * 8]]
+[[Exit Building|Ramsdale][$money += $job.wages * 8]]
+
+
+::"Nyapurr" Waiter
+<<set $shift = 1>>\
+<<set _shiftName = $job.name + $shift>>\
+<<if $nyapurrEvent>>\
+<<else>>\
+    <<nyaWaiter>>\
+    <<if $nyapurrEvent != true>>\
+        <<link "Get lunch" _shiftName>>
+            <<hour 4>>
+        <</link>>
+    <</if>>\
+<</if>>\
+
+
+::"Nyapurr" Waiter1
+<<set $shift = 2>>\
+<<set $location = '"Nyapurr" Waiter1'>>\
+<<set _shiftName = $job.name + $shift>>\
+<<set $player.hunger += 50>>\
+It's lunch time.
+
+The Nyapurr Cafe provides free food for all its staff, so you get yourself something called "tempura." As far as you know the human realm didn't have anything like this, but it seems to be fish. Most of the menu is fish, actually.
+
+You can spend your lunch talking to someone if you wish.
+
+[[Talk to Naomi|TalkNaomi]]
+
+<<link "Return to work" _shiftName>>
+    <<hour 4>>
+<</link>>
+
+
+::"Nyapurr" Waiter2
+<<set $shift = 3>>\
+<<set _shiftName = $job.name + $shift>>\
+<<nyaWaiter>>\
+<<if $nyapurrEvent != true>>\
+    <<link "End Shift" _shiftName>>
+        <<set $money += $job.wages * 8>>
+    <</link>>
+<</if>>\
+
+
+::"Nyapurr" Waiter3
+Your shift has ended.
+
+[[Stay in cafe|Nyapurr Cafe]]
+[[Go home|$home.location]]
+[[Exit Building|Ramsdale]]

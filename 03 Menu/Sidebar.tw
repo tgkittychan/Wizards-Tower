@@ -1,0 +1,60 @@
+::StoryCaption
+<<nobr>>
+    <<if $gameStarted>>
+        <h2><<= $displayDay[$time.dayNum]>></h2>
+        <h3><<print $displayTime[$time.timeNum]>></h3>
+        <h3><<print $displayClock>></h3>
+        <br>
+        <<if $player.hunger > 100>>
+            <<set $player.hunger = 100>>
+        <</if>>
+        <div class="meter">
+            <<set $percent=Math.floor(($player.hunger/100)*100)>>
+            <<print '<div class="bar hungerBar" style="width:' + $percent + '%"></div>'>>
+            <div style="position:absolute; top:0; left:0; width:100%">
+                @@#barText;Hunger@@
+            </div>
+        </div>
+        <br>
+        <<if $player.sleep > 100>>
+            <<set $player.sleep = 100>>
+        <</if>>
+        <<if $player.sleep < -100>>
+            <<set $player.sleep = -100>>
+        <</if>>
+        <div class="meter">
+            <<set $percent=Math.floor(($player.sleep/100)*100)>>
+            <<print '<div class="bar sleepBar" style="width:' + $percent + '%"></div>'>>
+            <div style="position:absolute; top:0; left:0; width:100%">
+                @@#barText;Energy@@
+            </div>
+        </div>
+    
+        <br>
+
+        <table class="sideTable">
+            <<if $daysLeftToLive >= 0>>
+            <tr>
+                <td class="sideTableLeft">Days Left:</td>
+                <td class="sideTableRight"><<print $daysLeftToLive>></td>
+            </tr>
+            <</if>>
+            <tr>
+                <td class="sideTableLeft">Money:</td>
+                <td class="sideTableRight"><<print "$" + $money>></td>
+            </tr>
+            <tr>
+                <td class="sideTableLeft">Rent:</td>
+                <td class="sideTableRight"><<print $home.rent>></td>
+            </tr>
+            <<if $metFelicity>>
+                <<if $daysLeftToLive >= 0>>
+                <tr>
+                    <td class="sideTableLeft">Pills</td> 
+                    <td class="sideTableRight"><<print $pills>></td>
+                </tr>
+                <</if>>
+            <</if>>
+        </table>
+    <</if>>
+ <</nobr>>

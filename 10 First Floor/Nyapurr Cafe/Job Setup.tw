@@ -1,0 +1,124 @@
+::NyapurrJobOfferStart
+    As you approach the Nyapurr Cafe, you're surprised to see a cat girl - err, nyapurr - standing outside in a waitress's uniform. The uniform isn't skimpy, but the blouse is tight enough to show off large breasts and curvy thighs dance beneath the petticoat of her short skirt. Your <<print $player.penis[$penisSize]>> stirs a little at the sight.
+
+    "A customer nya~" the girl says with a smile. "Come to eat exotic Nyapurr cuisine?" She looks you up and down, giving you a lewd smile. "Maybe hoping to meet a hotty Nyapurr nya?"
+
+    You shake your head, trying not to get distracted from your task. "Actually, I'm here to meet Ferris. Her sister said she'll give me a job."
+
+    "Oho?" The girl runs up to you, sniffing at the air. "You don't look like Nyapurr, but then again you not Ramadium either. I don't know what you are. Come, I take you to Ferris nyan~"
+
+    [[Follow the Nyapurr girl|Meet Ferris]]
+
+
+::Meet Ferris
+    <<set $metFerris = true>>\
+    Like her sister, Ferris is a short blonde girl with cat ears protruding from her head. A blonde tail sticks out from the thigh-length skirt of her uniform, swishing behind her as she stares you down.
+
+    "You're not Nyapurr," she says, staring at you with her hand on her chin. "But not Ramadium either."
+
+    "I knyow!" the other girl says. "He's the hyuman, right? Right? There's no other explanation nya~"
+
+    "Hush, silly nya," Ferris chides her. "Ugh, I can't believe my sister said you can have job at the //Nyapurr// Cafe."
+
+    You slump. "Does this mean I can't work here?"
+
+    "Of course you can have job, silly hyuman." Ferris sighs, resting a hand on your shoulder. "You are one of my sister's patients, after all, and we do need a new waitress."
+
+    "I'm a guy."
+
+    "You knyow what I mean," she hisses. "But you'll have to wear disguise nya. This is a Nyapurr cafe, after all. Our customers come for strange foods and exotic Nyapurr."
+
+    The other girl giggles. "Some of our customers //reallly// like Nyapurr girls nya~"
+
+    "Hush, pervert girl," Ferris says, wagging a finger at her. She turns back to you. "Well?"
+
+    [[What kind of disguise?]]
+
+
+::What kind of disguise?
+    "Nyothing too strange," Ferris says. "We have some fake nyapurr ears you can wear. Obviously, you can't tell anya of our customers that you're a human."
+
+    [[Take the job|Accept Nyapurr Cafe Job]]
+
+
+::Accept Nyapurr Cafe Job
+    <<set $nyaPoints += 2>>\
+    <<set $job = $nyaWaiter>>\
+    <<set $outfit = $nyaWaiter.outfit>>\
+    <<set $wardrobe.push($outfit)>>\
+    <<set $ferrisLinks.push("[[Quit job|QuitNyapurrCafe]]")>>\
+    "Great!" Ferris grabs you by the hand, shaking it firmly. "Just give me your address and I'll have your uniform delivered nya~"
+
+    [[Uh... I don't exactly have an address|NyapurrCafeHomeless]]
+
+
+::NyapurrCafeHomeless
+    "What do you meanya? You have to sleep somewhere!" A few moments later, her eyes go wide. "Of course. You're nyew in town."
+
+    "Can't you just give me the uniform now?"
+
+    "Nonsense," she says, grabbing you by the hand and practically dragging you towards the employees section. "Come, silly humanya. There's someone I'd like you to meet."
+
+    After reaching the employees section, the room transforms into a very large kitchen. Where the dining area is mostly customers and female nyapurr employees, the kitchen is staffed mostly by nyapurr men. The kitchen is very spacious and although the rest of the cafe is wood, this part of the building seems to mostly be made of stone and steel.
+
+    "Kou!" Ferris yells out. One of the nyapurr men looks up, surprised. "Come here."
+
+    Kou glances at you, then hangs his head, walking over to Ferris with a dejected look on his face. "Did I do something wrong, Ferris-nya?"
+
+    Ferris laughs. "Of course not, silly nya. Meet your new rommate."
+
+    [[Roommate?|NyapurrRommate]]
+
+
+::NyapurrRommate
+<<set $home = $kouHouse>>\
+<<set $money += $home.rent>>\
+"You heard me," she says with a laugh. "You two are going to be roommates nya~"
+
+"But- but Ferris-nya," Kou says, waving his hands in front of him as if they were a shield. "I don't even knyow this guy. And isn't he..." Kou starts to whisper, as if he thinks you won't be able to hear him. "A hyuman?"
+
+Ferris gives him a stern look. "Kou, I know you want a roommate."
+
+"But..."
+
+"No buts," she says. "This is an order from your boss, nya."
+
+"When Ferris turns to you, she has a big, happy smile plastered across her face. "Kou will show you the way home when he's off work. His shift ends at 16:00, and rent is $<<print $home.rent>> a night. That's nyot up for negotiation, understood?"
+
+You nod.
+
+"Then I expect you here first thing tomorrow at 8:00 sharp." After a few moments, she digs a small purse out of her pocket. "I almost forgot, but this should cover your rent tonight. See ya nya~
+
+<<if $time.hours < 16>>\
+    <<link "Wait for Kou's shift to end" "WaitForKou">>
+        <<silently>>
+            <<for _i = 0; _i != 16 ; _i = $time.hours>>
+                <<hour 1>>
+            <</for>>
+        <</silently>>
+    <</link>>
+<<else>>\
+    [[Wait for Kou's shift to end|WaitForKou]]
+<</if>>\
+
+::WaitForKou
+Work seems to be slow at the café, so the nyapurr waitress from earlier talks to you while you wait. Her name is Naomi and she seems like a pretty cool person, even if she's a bit of a pervert. 
+
+When 16:00 comes around, Kou approaches your table.
+
+"Ready to go, mister...?"
+
+You stand, holding out your hand. "My name's $player.name."
+
+He stares at your hand for a few moments, then grabs it. "Right. Well, follow me."
+
+[[Follow Kou]]
+
+
+::Follow Kou
+<<set $ramsdaleHomeLinks.push("[[Kou's House|Kou House]]")>>\
+In a quiet suburb near the Nyapurr Café, Kou's house stands nestled amongst many almost identical homes. It's two stories high, with a small garden in front. 
+
+"Well, welcome home I guess," Kou says as he opens the door. "Sorry about the mess. There's a room upstairs you can use."
+
+[[Enter|Kou House]]
