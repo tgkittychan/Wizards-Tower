@@ -1,7 +1,7 @@
 ::Ramsdale Inn
-The inn is a rather elaborate place. Like on the deck, the place is lit up with ball-shaped paper lamps. The rest of the inn is a smooth, polished wood, which is kept immaculately clean. A ramadium girl in a maid uniform works nearby; there's no doubt that she's the reason this place looks so nice.
+The inn is a rather elaborate place. Like on the deck, the place is lit up with ball-shaped paper lamps. The rest of the inn is a smooth, polished wood, which is kept immaculately clean. A Ramadium girl in a maid uniform works nearby; there's no doubt that she's the reason this place looks so nice.
 
-A ramadium man smiles at you from the front desk. "Welcome, <<if $faceNum >= 3 && $bodyHairNum == 0 && $muscleNum == 0>>ma'am<<else>>sir<</if>>. Rooms are $<<print $ramsdaleInn.rent>> a night if you're interested."
+A Ramadium man smiles at you from the front desk. "Welcome, <<if $faceNum >= 3 && $bodyHairNum == 0 && $muscleNum == 0>>ma'am<<else>>sir<</if>>. Rooms are $<<print $ramsdaleInn.rent>> a night if you're interested."
 
 [[Rent a room|RamsdaleInnRentRoom]]
 
