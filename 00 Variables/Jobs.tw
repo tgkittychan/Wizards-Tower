@@ -22,7 +22,7 @@
         name: "Nyapurr Cafe Men's Uniform",
         value: 200,
         description: 
-        "The men's unform for the Nyapurr Cafe is a fairly simple outfit. It's mostly black, with a black button up shirt, a pair of clean black slacks, and a black pair of boots. The only part of the uniform that isn't black is a brown apron, which all employees are required to wear."
+        "The men's uniform for the Nyapurr Cafe is a fairly simple outfit. It's mostly black, with a black button up shirt, a pair of clean black slacks, and a black pair of boots. The only part of the uniform that isn't black is a brown apron, which all employees are required to wear."
     }
 }>>
 
@@ -43,10 +43,10 @@
     name: "Baby", 
     wages: 0, 
     outfit: {
-        name: "Baby Rhomper",
+        name: "Baby Romper",
         value: 300,
         description: 
-        "Somehow, you've found yourself trapped in what looks like an adult-sized baby's rhomper. It's entirely pink, with white dots all over it and the words 'I <3 My Nappies' written across the chest. As if that weren't humiliating enough, the bottom of it poofs out obscenely, outlining what can only be a big, poofy baby diaper.<br><br>" +
+        "Somehow, you've found yourself trapped in what looks like an adult-sized baby's romper. It's entirely pink, with white dots all over it and the words 'I <3 My Nappies' written across the chest. As if that weren't humiliating enough, the bottom of it poofs out obscenely, outlining what can only be a big, poofy baby diaper.<br><br>" +
         
         "The diaper forces your legs apart and each of your movements are accompanied by a crinkling sound. A small padlock locks the zipper in place, making the outfit impossible to remove."
     }

@@ -242,13 +242,13 @@ window.felicityTest = function(muscle, chest, butt, race, humanity, nyapurr, fem
     if(sex == "female"){
         if(race == "nyapurr"){
             if(libido >= 80){
-                felicity += "Tests confirm that subject is extremely fertile female nyapurr. Breasts and tail are very sensitive. Smelling male sweat sends her into heat, causing her body to release powerful pheremone that will drive nyapurr men crazy with lust. Even I feel a slight urge to pounce on her, and females should be immune. I foresee lots of nyapurr babies in her future nya~";
+                felicity += "Tests confirm that subject is extremely fertile female nyapurr. Breasts and tail are very sensitive. Smelling male sweat sends her into heat, causing her body to release powerful pheromone that will drive nyapurr men crazy with lust. Even I feel a slight urge to pounce on her, and females should be immune. I foresee lots of nyapurr babies in her future nya~";
             }
             else if(libido >= 40){
-                felicity += "Tests confirm that subject is fertile female nyapurr. Breasts and tail are as sensitive as average female of my race, and subject releases pheremone when aroused that will attract nyapurr men. Subject will need to be very careful around nyapurr men if she doesn't want to get pregnant nya~";
+                felicity += "Tests confirm that subject is fertile female nyapurr. Breasts and tail are as sensitive as average female of my race, and subject releases pheromone when aroused that will attract nyapurr men. Subject will need to be very careful around nyapurr men if she doesn't want to get pregnant nya~";
             }
             else{
-                felicity += "Subject is female nyapurr capable of giving birth. She doesn't appear to release pheremones like most of my race, and is unaffected by pheremones released by males.";
+                felicity += "Subject is female nyapurr capable of giving birth. She doesn't appear to release pheromones like most of my race, and is unaffected by pheromones released by males.";
             }
         }
     }
